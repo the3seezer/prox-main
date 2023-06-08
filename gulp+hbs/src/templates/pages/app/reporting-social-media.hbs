@@ -1,0 +1,411 @@
+
+{{#extend layout app="true" title="reporting-social-media" active="reporting-social-media" path="../" }}
+    {{#content "content"}}
+      <div class="container-fluid">
+         <div class="row">
+            <div class="col-lg-8">
+               <div class="row">
+                  <div class="col-lg-4 col-md-6">
+                     <div class="card card-block card-stretch card-height">
+                        <div class="card-body">
+                           <div class="top-block-one d-flex align-items-center justify-content-between">
+                              <div class="bg-info icon iq-icon-box-2 mr-2 rounded">
+                                 <i class="fab fa-facebook-f"></i>
+                              </div>
+                              <span class="text-success"><b> <i class="ri-arrow-up-line mr-1"></i> +50.12% </b></span>
+                           </div>
+                           <div class="mt-4">
+                              <h3>96.64k</h3>
+                              <p class="mb-0">Facebook</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                     <div class="card card-block card-stretch card-height bg-primary">
+                        <div class="card-body">
+                           <div class="top-block-one d-flex align-items-center justify-content-between">
+                              <div class="bg-white icon iq-icon-box-2 mr-2 rounded">
+                                 <i class="fab fa-twitter text-primary"></i>
+                              </div>
+                              <span class="text-white"><b> <i class="ri-arrow-down-line mr-1"></i> -22.72% </b></span>
+                           </div>      
+                           <div class="mt-4">
+                              <h3 class="text-white">35.56K</h3>
+                              <p class="mb-0  text-white">Twitter</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                     <div class="card card-block card-stretch card-height">
+                        <div class="card-body">
+                           <div class="top-block-one d-flex align-items-center justify-content-between">
+                              <div class="bg-success icon iq-icon-box-2 mr-2 rounded">
+                                 <i class="lar la-hand-pointer"></i>
+                              </div>
+                              <span class="text-success"><b> <i class="ri-arrow-up-line mr-1"></i> +42.72% </b></span>
+                           </div>      
+                           <div class="mt-4">
+                              <h3>78.65K</h3>
+                              <p class="mb-0">Instagram</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                     <div class="card card-block card-stretch card-height">
+                        <div class="card-body">
+                           <div class="top-block-one d-flex align-items-center justify-content-between">
+                              <div class="bg-warning icon iq-icon-box-2 mr-2 rounded">
+                                 <i class="fab fa-google-plus-g"></i>
+                              </div>
+                              <span class="text-danger"><b> <i class="ri-arrow-down-line mr-1"></i> -20.72% </b></span>
+                           </div>
+      
+                           <div class="mt-4">
+                              <h3>30.45K</h3>
+                              <p class="mb-0">Google Plus</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                     <div class="card card-block card-stretch card-height">
+                        <div class="card-body">
+                           <div class="top-block-one d-flex align-items-center justify-content-between">
+                              <div class="bg-danger icon iq-icon-box-2 mr-2 rounded">
+                                 <i class="fab fa-linkedin-in"></i>
+                              </div>
+                              <span class="text-success"><b> <i class="ri-arrow-up-line mr-1"></i> +67.72% </b></span>
+                           </div>
+      
+                           <div class="mt-4">
+                              <h3>90.64k</h3>
+                              <p class="mb-0">Linkedin</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                     <div class="card card-block card-stretch card-height">
+                        <div class="card-body">
+                           <div class="top-block-one d-flex align-items-center justify-content-between">
+                              <div class="bg-dark icon iq-icon-box-2 mr-2 rounded">
+                                 <i class="fab fa-snapchat-ghost"></i>
+                              </div>
+                              <span class="text-danger"><b> <i class="ri-arrow-down-line mr-1"></i> -22.72% </b></span>
+                           </div>
+      
+                           <div class="mt-4">
+                              <h3>53.16k</h3>
+                              <p class="mb-0">Snapchat</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-4">
+               <div class="card card-block card-stretch card-height">
+                  <div class="card-header border-none">
+                     <div class="header-title">
+                        <h4 class="card-title">Engagement Rate</h4>
+                     </div>
+                  </div>
+                  <div class="card-body">
+                     <div id="reporting-chart-15"></div>
+                  </div>
+               </div>               
+            </div>
+            <div class="col-md-6">
+               <div class="card card-block card-stretch card-height">
+                  <div class="card-header d-flex justify-content-between">
+                     <div class="header-title">
+                        <h4 class="card-title">Viwed on Devices</h4>
+                     </div>
+                  </div>
+                  <div class="card-body social-report-chart">
+                     <div id="ecommerce-chart-03"></div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-6">
+               <div class="card card-block card-stretch card-height">
+                  <div class="card-header border-none">
+                     <div class="header-title">
+                        <h4 class="card-title">Top Keywords (Conversions)</h4>
+                     </div>
+                  </div>
+                  <div class="card-body">
+                     <div class="iq-details">
+                        <span class="title">Facebook</span>
+                        <div class="iq-progress-bar bg-primary-light mt-2">
+                           <span class="bg-primary iq-progress progress-1" data-percent="90">
+                              <span class="progress-text-one bg-primary">90%</span>
+                           </span>
+                        </div>
+                     </div>
+                     <div class="iq-details mt-4">
+                        <span class="title">Twitter</span>
+                        <div class="iq-progress-bar bg-warning-light mt-2">
+                           <span class="bg-warning iq-progress progress-1" data-percent="60">
+                              <span class="progress-text-one bg-warning">60%</span>
+                           </span>
+                        </div>
+                     </div>
+                     <div class="iq-details mt-4">
+                        <span class="title">Instagram</span>
+                        <div class="iq-progress-bar bg-info-light mt-2">
+                           <span class="bg-info iq-progress progress-1" data-percent="76">
+                              <span class="progress-text-one bg-info">76%</span>
+                           </span>
+                        </div>
+                     </div>
+                     <div class="iq-details mt-4">
+                        <span class="title">Google Plus</span>
+                        <div class="iq-progress-bar bg-danger-light mt-2">
+                           <span class="bg-danger iq-progress progress-1" data-percent="85">
+                              <span class="progress-text-one bg-danger">85%</span>
+                           </span>
+                        </div>
+                     </div>
+                     <div class="iq-details mt-4">
+                        <span class="title">Linkedin</span>
+                        <div class="iq-progress-bar bg-success-light mt-2">
+                           <span class="bg-success iq-progress progress-1" data-percent="70">
+                              <span class="progress-text-one bg-success">70%</span>
+                           </span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-4">               
+               <div class="card card-block card-stretch card-height">
+                  <div class="card-header d-flex justify-content-between border-none">
+                     <div class="iq-header-title">
+                        <h4 class="card-title mb-0">Browser Traffic</h4>
+                     </div>
+                  </div>
+                  <div class="card-body">
+                     <ul class="perfomer-lists m-0 p-0">
+                        <li class="d-flex mb-4 align-items-center">
+                           <div class="user-img img-fluid"><img src="{{path}}assets/images/icon/14.png" alt="story-img"
+                                 class="rounded"></div>
+                           <div class="media-support-info ml-3">
+                              <h6>Opera Mini</h6>
+                           </div>
+                           <div class="card-header-toolbar d-flex align-items-center">
+                              <span><b>67.7%</b></span>
+                           </div>
+                        </li>
+                        <li class="d-flex mb-4 align-items-center">
+                           <div class="user-img img-fluid"><img src="{{path}}assets/images/icon/15.png" alt="story-img"
+                                 class="rounded"></div>
+                           <div class="media-support-info ml-3">
+                              <h6>Google Chrome</h6>
+                           </div>
+                           <div class="card-header-toolbar d-flex align-items-center">
+                              <span><b>43.3%</b></span>
+                           </div>
+                        </li>
+                        <li class="d-flex mb-4 align-items-center">
+                           <div class="user-img img-fluid"><img src="{{path}}assets/images/icon/16.png" alt="story-img"
+                                 class="rounded"></div>
+                           <div class="media-support-info ml-3">
+                              <h6>Firefox</h6>
+                           </div>
+                           <div class="card-header-toolbar d-flex align-items-center">
+                              <span><b>87.2%</b></span>
+                           </div>
+                        </li>
+                        <li class="d-flex mb-4 align-items-center">
+                           <div class="user-img img-fluid"><img src="{{path}}assets/images/icon/17.png" alt="story-img"
+                                 class="rounded"></div>
+                           <div class="media-support-info ml-3">
+                              <h6>Internet Explorer</h6>
+                           </div>
+                           <div class="card-header-toolbar d-flex align-items-center">
+                              <span><b>91.3%</b></span>
+                           </div>
+                        </li>
+                        <li class="d-flex mb-4 align-items-center">
+                           <div class="user-img img-fluid"><img src="{{path}}assets/images/icon/18.png" alt="story-img"
+                                 class="rounded"></div>
+                           <div class="media-support-info ml-3">
+                              <h6>Safari</h6>
+                           </div>
+                           <div class="card-header-toolbar d-flex align-items-center">
+                              <span><b>12.5%</b></span>
+                           </div>
+                        </li>                        
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-4">
+               <div class="card card-block card-stretch card-height">
+                  <div class="card-header d-flex justify-content-between">
+                     <div class="header-title">
+                        <h4 class="card-title">IP Exclusions by Rule (Today)</h4>
+                     </div>
+                  </div>
+                  <div class="card-body">
+                     <ul class="perfomer-lists m-0 p-0">
+                        <li class="d-flex mb-4 align-items-center">
+                           <div class="top-block-one d-flex align-items-center justify-content-between">
+                              <div class="bg-primary icon iq-icon-box-2 mr-2 rounded">
+                                 <i class="las la-globe"></i>
+                              </div>
+                           </div>
+                           <div class="media-support-info ml-3">
+                              <h5>Anonymous</h5>
+                              <p class="mb-0 font-size-12">Creative Performance</p>
+                           </div>
+                           <div class="iq-card-header-toolbar d-flex align-items-center">
+                              <h3><b>268</b></h3>
+                           </div>
+                        </li>
+                        <li class="d-flex mb-4 align-items-center">
+                           <div class="top-block-one d-flex align-items-center justify-content-between">
+                              <div class="bg-danger icon iq-icon-box-2 mr-2 rounded">
+                                 <i class="lar la-hand-pointer"></i>
+                              </div>
+                           </div>
+                           <div class="media-support-info ml-3">
+                              <h5>Excessive Clicking</h5>
+                              <p class="mb-0 font-size-12">Media Performance</p>
+                           </div>
+                           <div class="iq-card-header-toolbar d-flex align-items-center">
+                              <h3><b>4342</b></h3>
+                           </div>
+                        </li>
+                        <li class="d-flex mb-4 align-items-center">
+                           <div class="top-block-one d-flex align-items-center justify-content-between">
+                              <div class="bg-warning icon iq-icon-box-2 mr-2 rounded">
+                                 <i class="las la-signal"></i>
+                              </div>
+                           </div>
+                           <div class="media-support-info ml-3">
+                              <h5>Premium Impressions</h5>
+                              <p class="mb-0 font-size-12">Reach Performance</p>
+                           </div>
+                           <div class="iq-card-header-toolbar d-flex align-items-center">
+                              <h3><b>6565</b></h3>
+                           </div>
+                        </li>
+                        <li class="d-flex align-items-center">
+                           <div class="top-block-one d-flex align-items-center justify-content-between">
+                              <div class="bg-info icon iq-icon-box-2 mr-2 rounded">
+                                 <i class="las la-desktop"></i>
+                              </div>
+                           </div>
+                           <div class="media-support-info ml-3">
+                              <h5>Google Ads</h5>
+                              <p class="mb-0 font-size-12">Premium Performance</p>
+                           </div>
+                           <div class="iq-card-header-toolbar d-flex align-items-center">
+                              <h3><b>32423</b></h3>
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-4">
+               <div class="card card-block card-stretch card-height">
+                  <div class="card-header border-none">
+                     <div class="header-title">
+                        <h4 class="card-title">Statistic by gender</h4>
+                        <p class="mb-0">Mar 17 - Apr 03</p>
+                     </div>
+                  </div>
+                  <div class="card-body">
+                     <div id="reporting-chart-08">
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-xl-8 col-lg-6">
+               <div class="card card-block card-stretch card-height">
+                  <div class="card-header border-none">
+                     <div class="header-title">
+                        <h4 class="card-title">Target Population for you brand</h4>
+                     </div>
+                  </div>
+                  <div class="card-body">
+                     <div class="table-responsive">
+                        <table class="table mb-0 table-borderless">
+                           <thead>
+                              <tr>
+                                 <th scope="col">Target Population</th>
+                                 <th scope="col">Visitor</th>
+                                 <th scope="col">Reached</th>
+                                 <th scope="col">Reached%</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr>
+                                 <td><span>Men aged between<b> 18-24</b></span></td>
+                                 <td>45,332</td>
+                                 <td>92,7937</td>
+                                 <td>
+                                    <div class="btn btn-primary">42.12% <i class="ri-arrow-up-fill"></i></div>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td><span>Women aged between<b> 25-34</b></span> </td>
+                                 <td>13,830</td>
+                                 <td>88,799</td>
+                                 <td>
+                                    <div class="btn btn-danger">12.93% <i class="ri-arrow-down-line"></i></div>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td><span>Men aged between<b> 35-44</b></span></td>
+                                 <td>95,98</td>
+                                 <td>32,9937</td>
+                                 <td>
+                                    <div class="btn btn-danger">02.76% <i class="ri-arrow-down-line"></i></div>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td><span>Women aged between<b> 44-60</b></span></td>
+                                 <td>58,732</td>
+                                 <td>412,7935</td>
+                                 <td>
+                                    <div class="btn btn-primary">82.12% <i class="ri-arrow-up-fill"></i></div>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td><span>Men aged between<b> 60+</b></span></td>
+                                 <td>95,332</td>
+                                 <td>452,7978</td>
+                                 <td>
+                                    <div class="btn btn-primary">92.41% <i class="ri-arrow-up-fill"></i></div>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-xl-4 col-lg-6">
+               <div class="card card-block card-stretch card-height">
+                  <div class="card-header border-none">
+                     <div class="header-title">
+                        <h4 class="card-title">Overview</h4>
+                     </div>
+                  </div>              
+                  <div class="card-body">
+                     <div id="reporting-chart-16">
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   {{/content}}
+{{/extend}}

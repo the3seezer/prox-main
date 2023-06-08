@@ -1,0 +1,312 @@
+
+{{#extend 'layouts/backend/layout-5' title="layout-5" active="layout-5" path="../" }}
+{{#content "content"}}
+<div class="container">
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="card-transparent card-block card-stretch card-height">
+                <div class="card-body p-0">
+                    <a href="#"><img src="{{path}}assets/images/layouts/layout-5/card.png" class="img-fluid w-100 rounded" alt="image"></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-8">
+            <div class="card card-block card-stretch card-height bg-primary">
+                <div class="card-body p-0 payment-detail" style="background: url({{path}}assets/images/layouts/layout-5/01.png) scroll no-repeat top left; background-size: cover;">
+                    <div class="d-flex flex-wrap align-items-center payment-text pt-3 pt-md-0">
+                        <div class="col-lg-6 pl-sm-5 mt-3 mt-lg-0">
+                            <h3 class="text-white mb-3">Dreams Come True With</h3>
+                            <p class="text-white font-size-16">Lorem Ipsum Dolor sit, Consectetur adipiscing Elit.
+                                Aliquam Id Diam Viverra At Viverra.</p>
+                        </div>
+                        <div class="col-lg-6 ml-auto">
+                            <div class="bottom-img float-right">
+                                <img src="{{path}}assets/images/layouts/layout-5/02.png" class="img-fluid" alt="image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="card card-block card-stretch card-height">
+                        <div class="card-body">
+                            <p class="mb-0">Income</p>
+                            <h3>$ 90,789</h3>
+                            <div id="payment-layout-chart-1"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card card-block card-stretch card-height">
+                        <div class="card-body">
+                            <p class="mb-0">Outgoing</p>
+                            <h3>$ 40,748</h3>
+                            <div id="payment-layout-chart-2"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card card-block card-stretch card-height">
+                        <div class="card-body">
+                            <p class="mb-0">Saving</p>
+                            <h3>$ 50,458</h3>
+                            <div id="payment-layout-chart-3"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="card card-block card-stretch card-height">
+                        <div class="card-body">
+                           <div class="d-flex align-items-center justify-content-between">
+                               <div class="d-flex align-items-center">
+                                    <div class="icon iq-icon-box rounded bg-warning text-center">
+                                        <i class="fas fa-sync-alt"></i>
+                                    </div>
+                                    <div class="iq-result-info">
+                                        <h5>Conversion</h5>
+                                    </div>
+                               </div>
+                               <a href="#" class="btn btn-primary btn-sm">Archive</a>
+                           </div>
+                           <div class="row mt-3 mb-4">
+                               <div class="col-md-6">
+                                   <div class="d-flex align-items-center justify-content-between border rounded p-3">
+                                       <input type="text" class="form-control conversion-text" value="1,000.00">
+                                        <select class="form-control value-select">
+                                            <option>GBP</option>
+                                            <option>USD</option>
+                                        </select>
+                                   </div>
+                               </div>
+                               <div class="col-md-6 mt-3 mt-md-0">
+                                    <div class="d-flex align-items-center justify-content-between border rounded p-3">
+                                        <input type="text" class="form-control conversion-text" value="1,240.61">
+                                        <select class="form-control value-select">
+                                            <option>USD</option>
+                                            <option>GBP</option>
+                                        </select>
+                                    </div>
+                               </div>
+                           </div>
+                           <div class="block-rate">
+                               <h4>Rate= 1.24 <span class="text-secondary">(Apr 27, 14:44 UTC)</span></h4>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="card card-block card-stretch card-height">
+                <div class="card-header d-flex justify-content-between">
+                    <div class="header-title">
+                        <h4 class="card-title">Card Balance</h4>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="card-header-toolbar d-flex align-items-center card-balance">
+                        <ul class="nav nav-pills">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link active rounded-small">Weekly</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Monthly</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Yearly</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="payment-layout-chart-4">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card card-block card-stretch card-height">
+                <div class="card-header d-flex justify-content-between">
+                    <div class="header-title">
+                        <h4 class="card-title">Card Info</h4>
+                    </div>
+                    <div class="card-header-toolbar d-flex align-items-center">
+                        <a href="#" class="btn btn-sm btn-primary view-more">More Details</a>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <ul class="list-inline p-0 m-0">
+                        <li class="d-flex align-items-center justify-content-between pb-3 border-bottom">
+                            <h5 class="d-flex align-items-center"><i class="ri-profile-line text-primary mr-3"></i>Status</h5>
+                            <p class="mb-0">Active</p>
+                        </li>
+                        <li class="d-flex align-items-center justify-content-between mt-3 pb-3 border-bottom">
+                            <h5 class="d-flex align-items-center"><i class="ri-terminal-window-line text-primary mr-3"></i>Type Of Card</h5>
+                            <p class="mb-0">Master Card</p>
+                        </li>
+                        <li class="d-flex align-items-center justify-content-between mt-3">
+                            <h5 class="d-flex align-items-center"><i class="ri-profile-line text-primary mr-3"></i>Currency</h5>
+                            <p class="mb-0">USD</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card card-block card-stretch card-height">
+                <div class="card-header d-flex justify-content-between">
+                    <div class="header-title">
+                        <h4 class="card-title">Expanses</h4>
+                    </div>
+                    <div class="card-header-toolbar d-flex align-items-center">
+                        <a href="#" class="btn btn-sm btn-primary view-more">Weekly</a>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div id="payment-layout-chart-5"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card card-block card-stretch card-height">
+                <div class="card-header d-flex justify-content-between">
+                    <div class="header-title">
+                        <h4 class="card-title">Card Member's</h4>
+                    </div>
+                    <div class="card-header-toolbar d-flex align-items-center">
+                        <a href="#" class="btn btn-sm btn-primary view-more">View All</a>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <ul class="list-inline p-0 m-0">
+                        <li class="d-flex align-items-center mb-3">
+                            <img src="{{path}}assets/images/user/04.jpg" class="img-fluid rounded-small avatar-60" alt="image">
+                            <div class="ml-3">
+                                <h5>Mr. Breody Anderson</h5>
+                                <p class="mb-0">breody@gmail.com</p>
+                            </div>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <img src="{{path}}assets/images/user/05.jpg" class="img-fluid rounded-small avatar-60" alt="image">
+                            <div class="ml-3">
+                                <h5>Leta Halvorson</h5>
+                                <p class="mb-0">leta@gmail.com</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12">
+            <div class="card">
+                <div class="card-header d-flex justify-content-between">
+                    <div class="header-title">
+                        <h4 class="card-title">Recent Transaction</h4>
+                    </div>
+                    <div class="card-header-toolbar d-flex align-items-center">
+                        <a href="#" class="btn btn-sm btn-primary view-more">View More</a>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table data-table mb-0 table-borderless tbl-recent-info text-body">
+                            <thead>
+                                <tr class="text-dark">
+                                    <th scope="col">No</th>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Date & Time</th>
+                                    <th scope="col">Paid By</th>
+                                    <th scope="col">Price</th>
+                                    <th scope="col">Details</th>
+                                    <th scope="col">Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="avatar-40 mr-2">
+                                                <img src="{{path}}assets/images/user/01.jpg" class="img-fluid rounded"
+                                                    alt="image">
+                                            </div>
+                                            <div>Maggie Potts</div>
+                                        </div>
+                                    </td>
+                                    <td>01/09/2020, 9:30</td>
+                                    <td><img src="{{path}}assets/images/icon/20.png" class="img-fliud" alt="image"></td>
+                                    <td>2500 $</td>
+                                    <td><img src="{{path}}assets/images/icon/pdf.png" class="img-fliud" alt="image"></td>
+                                    <td>
+                                        <div class="badge badge-danger">Paid</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="avatar-40 mr-2">
+                                                <img src="{{path}}assets/images/user/02.jpg" class="img-fluid rounded"
+                                                    alt="image">
+                                            </div>
+                                            <div>John Watson</div>
+                                        </div>
+                                    </td>
+                                    <td>08/09/2020, 7:45</td>
+                                    <td><img src="{{path}}assets/images/icon/20.png" class="img-fliud" alt="image"></td>
+                                    <td>4805 $</td>
+                                    <td><img src="{{path}}assets/images/icon/pdf.png" class="img-fliud" alt="image"></td>
+                                    <td>
+                                        <div class="badge badge-danger">Paid</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="avatar-40 mr-2">
+                                                <img src="{{path}}assets/images/user/03.jpg" class="img-fluid rounded"
+                                                    alt="image">
+                                            </div>
+                                            <div>Kusti Franti</div>
+                                        </div>
+                                    </td>
+                                    <td>25/08/2020, 8:05</td>
+                                    <td><img src="{{path}}assets/images/icon/21.png" class="img-fliud" alt="image"></td>
+                                    <td>3804 $</td>
+                                    <td><img src="{{path}}assets/images/icon/pdf.png" class="img-fliud" alt="image"></td>
+                                    <td>
+                                        <div class="badge badge-danger">Paid</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="avatar-40 mr-2">
+                                                <img src="{{path}}assets/images/user/04.jpg" class="img-fluid rounded"
+                                                    alt="image">
+                                            </div>
+                                            <div>Abigail Franti</div>
+                                        </div>
+                                    </td>
+                                    <td>15/08/2020, 7:20</td>
+                                    <td><img src="{{path}}assets/images/icon/22.png" class="img-fliud" alt="image"></td>
+                                    <td>5600 $</td>
+                                    <td><img src="{{path}}assets/images/icon/pdf.png" class="img-fliud" alt="image"></td>
+                                    <td>
+                                        <div class="badge badge-danger">Paid</div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{{/content}}
+{{/extend}}

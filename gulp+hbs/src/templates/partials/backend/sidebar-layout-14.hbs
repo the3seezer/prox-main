@@ -1,0 +1,47 @@
+<div class="iq-sidebar">
+    <div class="iq-sidebar-logo">
+        <div class="iq-menu-bt-sidebar">
+            <i class="las la-bars wrapper-menu float-right"></i>
+        </div>
+    </div>
+    <div class="p-pt">               
+        <img src="{{path}}assets/images/layouts/layout-14/profile.png" class="img-fluid avatar-60 rounded d-block mx-auto profile-img" alt="user">
+        <div class="profile-detail mt-3 text-center">
+            <h4>John Doe</h4>
+            <p class="text-primary mb-0">M.B.B.S</p>
+        </div>
+        <div class="seprator"></div>
+    </div>                    
+    <div class="data-scrollbar" data-scroll="1">
+        <nav class="iq-sidebar-menu">
+            <ul id="iq-sidebar-toggle" class="iq-menu">
+                <li class="{{#compare active '==' 'index'}}active{{ else }} {{/compare}}">
+                <a href="index.html" class=""><i
+                        class="las la-home iq-arrow-left"></i><span>Dashboard</span>
+                </a>                        
+                </li>
+                <li class="{{#compare active '==' 'layout-14'}}active{{ else }} {{/compare}}">
+                <a href="layout-14.html" class=""><i
+                        class="lab la-jira iq-arrow-left"></i><span>Layout</span>
+                </a>                        
+                </li>
+                <li class="{{#compare active '==' 'ui-colors'}}active{{ else }} {{/compare}}">
+                <a href="ui-colors.html" class=""><i
+                        class="lab la-elementor iq-arrow-left"></i><span>UI Elements</span>
+                </a>                        
+                </li>
+                <li class="{{#compare active '==' 'form-layout'}}active{{ else }} {{/compare}}">
+                <a href="form-layout.html" class=""><i
+                        class="lab la-wpforms iq-arrow-left"></i><span>Forms</span>                        
+                </a>                       
+                </li>
+                <li class="{{#compare active '==' 'auth-sign-in'}}active{{ else }} {{/compare}}">
+                <a href="auth-sign-in.html" class="collapsed" data-toggle="collapse"
+                    aria-expanded="false"><i class="las la-pager iq-arrow-left"></i><span>Authentication</span>                           
+                </a>                        
+                </li>
+            </ul>
+        </nav>
+        <div class="p-3"></div>
+    </div>
+</div>

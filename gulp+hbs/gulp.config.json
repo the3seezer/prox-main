@@ -1,0 +1,250 @@
+{
+    "compressDir": "prox-export",
+    "appName": "ProX",
+    "output": "dist",
+    "logoName": "",
+    "faviconName": "",
+    "loaderName": "",
+    "type": [
+        "gulp+html",
+        "gulp+hbs",
+        "webpack+html"
+    ],
+    "imgMinify": "false",
+    "dark": "false",
+    "pages": {
+        "skip": {
+            "app": [],
+            "backend": [],
+            "landing": []
+        }
+    },
+    "backend": {
+        "layout": "default",
+        "layoutMenu": {
+            "layout1": [
+                "home",
+                "layouts",
+                "ui",
+                "auth"
+            ],
+            "layout2": [
+                "layouts",
+                "app",
+                "ui",
+                "forms",
+                "auth",
+                "extra"
+            ],
+            "layout3": [
+                "home",
+                "layouts",
+                "app",
+                "forms",
+                "auth",
+                "extra"
+            ],
+            "layout4": [
+                "home",
+                "layouts",
+                "widget",
+                "ui",
+                "plugins",
+                "gallary",
+                "auth"
+            ],
+            "layout5": [
+                "home",
+                "layouts",
+                "ui",
+                "auth"
+            ],
+            "layout6": [
+                "home",
+                "layouts",
+                "ui"
+            ],
+            "layout7": [
+                "home",
+                "layouts",
+                "ui",
+                "auth"
+            ],
+            "layout8": [
+                "layouts",
+                "app",
+                "ui",
+                "forms",
+                "auth",
+                "extra"
+            ],
+            "layout9": [
+                "home",
+                "layouts",
+                "app",
+                "widget",
+                "ui",
+                "plugins",
+                "forms",
+                "table",
+                "icons",
+                "gallary",
+                "blog",
+                "chart",
+                "map",
+                "auth",
+                "extra"
+            ],
+            "layout10": [
+                "home",
+                "layouts",
+                "ui",
+                "app",
+                "plugins",
+                "forms"
+            ],
+            "layout11": [
+                "home",
+                "layouts",
+                "ui"
+            ],
+            "layout12": [
+                "home",
+                "layouts",
+                "ui",
+                "auth"
+            ],
+            "layout13": [
+                "home",
+                "layouts",
+                "ui",
+                "auth"
+            ],
+            "layout14": [],
+            "layout15": [
+                "home",
+                "layouts",
+                "ui",
+                "widget",
+                "gallary"
+            ]
+        },
+        "assets": {
+            "fonts": [
+                "./src/assets/fonts/**/*.*"
+            ],
+            "style": [
+                "./src/assets/scss/backend.scss",
+                "./node_modules/flatpickr/dist/flatpickr.min.css",
+                "./node_modules/slick-carousel/slick/slick.css",
+                "./node_modules/slick-carousel/slick/slick-theme.css",
+                "./node_modules/owl.carousel/dist/assets/owl.carousel.min.css",
+                "./node_modules/magnific-popup/dist/magnific-popup.css",
+                "./node_modules/select2/dist/css/select2.min.css",
+                "./node_modules/quill/dist/quill.snow.css",
+                "./node_modules/jvectormap-next/jquery-jvectormap.css",
+                "./node_modules/datatables/media/css/jquery.dataTables.min.css"
+            ],
+            "js": {
+                "required": [
+                    "./node_modules/jquery/dist/jquery.js",
+                    "./{directory}/assets/js/popper.min.js",
+                    "./node_modules/bootstrap/dist/js/bootstrap.min.js",
+                    "./node_modules/jquery.appear/jquery.appear.js",
+                    "./node_modules/waypoints/lib/jquery.waypoints.js",
+                    "./node_modules/counterup2/dist/index.js",
+                    "./node_modules/flatpickr/dist/flatpickr.min.js",
+                    "./node_modules/select2/dist/js/select2.min.js",
+                    "./node_modules/owl.carousel/dist/owl.carousel.min.js",
+                    "./node_modules/smooth-scrollbar/dist/smooth-scrollbar.js",
+                    "./node_modules/jvectormap-next/jquery-jvectormap.min.js",
+                    "./node_modules/jvectormap-content/world-mill.js",
+                    "./node_modules/jvectormap-content/de-merc.js",
+                    "./node_modules/jvectormap-content/us-aea.js",
+                    "./node_modules/datatables/media/js/jquery.dataTables.min.js"
+                ],
+                "optional": [
+                    "./node_modules/jquery-bar-rating/dist/jquery.barrating.min.js",
+                    "./{directory}/assets/js/rating.min.js",
+                    "./node_modules/magnific-popup/dist/jquery.magnific-popup.min.js",
+                    "./node_modules/slick-carousel/slick/slick.min.js",
+                    "./node_modules/sweetalert2/dist/sweetalert2.min.js",
+                    "./node_modules/js-treeview/dist/treeview.min.js",
+                    "./node_modules/quill/dist/quill.min.js",
+                    "./node_modules/bstreeview/dist/js/bstreeview.min.js",
+                    "./{directory}/assets/js/apexcharts.js",
+                    "./{directory}/assets/js/core.js",
+                    "./{directory}/assets/js/charts.js",
+                    "./{directory}/assets/js/animated.js",
+                    "./{directory}/assets/js/kelly.js",
+                    "./{directory}/assets/js/maps.js",
+                    "./{directory}/assets/js/worldLow.js",
+                    "./{directory}/assets/js/country2.js",
+                    "./{directory}/assets/js/material.js",
+                    "./{directory}/assets/js/morris.min.js",
+                    "./{directory}/assets/js/raphael-min.js",
+                    "./{directory}/assets/js/highcharts.js",
+                    "./{directory}/assets/js/highcharts-3d.js",
+                    "./{directory}/assets/js/highcharts-more.js"
+                ]
+            }
+        }
+    },
+    "frontend": {
+        "assets": {
+            "fonts": [
+                "./src/assets/fonts/**/*.*"
+            ],
+            "style": [
+                "./src/assets/scss/frontend.scss",
+                "./node_modules/flatpickr/dist/flatpickr.min.css",
+                "./node_modules/slick-carousel/slick/slick.css",
+                "./node_modules/slick-carousel/slick/slick-theme.css",
+                "./node_modules/owl.carousel/dist/assets/owl.carousel.min.css",
+                "./node_modules/magnific-popup/dist/magnific-popup.css",
+                "./node_modules/select2/dist/css/select2.min.css",
+                "./node_modules/jvectormap-next/jquery-jvectormap.css",
+                "./node_modules/swiper/swiper-bundle.min.css"
+            ],
+            "js": {
+                "required": [
+                    "./node_modules/jquery/dist/jquery.js",
+                    "./{directory}/assets/js/popper.min.js",
+                    "./node_modules/bootstrap/dist/js/bootstrap.min.js",
+                    "./node_modules/jquery.appear/jquery.appear.js",
+                    "./node_modules/counterup2/dist/index.js",
+                    "./node_modules/flatpickr/dist/flatpickr.min.js",
+                    "./node_modules/select2/dist/js/select2.min.js",
+                    "./node_modules/owl.carousel/dist/owl.carousel.min.js",
+                    "./node_modules/wowjs/dist/wow.min.js",
+                    "./node_modules/swiper/swiper-bundle.js",
+                    "./node_modules/waypoints/lib/jquery.waypoints.js"
+                ],
+                "optional": []
+            }
+        }
+    },
+    "intro": {
+        "assets": {
+            "style": [
+                "./src/assets/scss/intro.scss",
+                "./node_modules/slick-carousel/slick/slick.css",
+                "./node_modules/slick-carousel/slick/slick-theme.css"
+            ],
+            "js": {
+                "required": [
+                    "./node_modules/jquery/dist/jquery.js",
+                    "./{directory}/assets/js/popper.min.js",
+                    "./node_modules/bootstrap/dist/js/bootstrap.min.js",
+                    "./node_modules/jquery.appear/jquery.appear.js",
+                    "./node_modules/waypoints/lib/jquery.waypoints.js",
+                    "./node_modules/smooth-scrollbar/dist/smooth-scrollbar.js",
+                    "./node_modules/counterup2/dist/index.js",
+                    "./node_modules/slick-carousel/slick/slick.min.js",
+                    "./node_modules/wowjs/dist/wow.min.js"
+                ],
+                "optional": []
+            }
+        }
+    }
+}

@@ -1,0 +1,60 @@
+<!-- Header -->
+<header class="main-header l-header-2 header-saas-dark">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <a class="navbar-brand" href="index.html">
+                        {{#compare logoName '!==' ''}}
+                        <img src="{{path}}assets/images/{{logoName}}" class="img-fluid sticky-logo" alt="img">
+                        {{else}}
+                        <img src="{{path}}assets/images/logo-white.png" class="img-fluid sticky-logo" alt="img">
+                        {{/compare}}
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="menu-btn d-inline-block" id="menu-btn">
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                        </span>
+                        <span class="ion-navicon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto w-100 justify-content-end">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#iq-home">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#how-it-works">Service</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about-us">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#feature">Feature</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#team">Team</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#testimonial">Testimonial</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#pricing">Pricing</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#blog">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#iq-contact">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- Header End -->

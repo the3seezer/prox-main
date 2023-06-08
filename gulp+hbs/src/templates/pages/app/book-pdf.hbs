@@ -1,0 +1,16 @@
+
+{{#extend layout app="true" title="book-pdf" active="book-pdf" bodyClass="color-light" path="../" }}
+    {{#content "content"}}
+      <div class="container-fluid">
+         <div class="row">
+            <div class="col-sm-12">
+               <div class="card book-detail">
+                  <div class="card-body p-0">
+                     <iframe src="{{path}}assets/images/book-image/book/book.pdf"  style="width: 100%; height: 90vh;"></iframe>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   {{/content}}
+{{/extend}}

@@ -1,0 +1,611 @@
+
+<div class="iq-sidebar {{#if sidebarStyle}} {{ sidebarStyle }} {{else}} sidebar-default {{/if}}">
+        <div class="iq-sidebar-logo d-flex justify-content-between">
+            <a href="{{path}}backend/index.html" class="header-logo">
+                {{#compare logoName '!==' ''}}
+                <img src="{{path}}assets/images/{{logoName}}" class="img-fluid rounded-normal" alt="logo">
+                {{else}}
+                <img src="{{path}}assets/images/logo.png" class="img-fluid rounded-normal" alt="logo">
+                {{/compare}}
+            </a>
+            <div class="iq-menu-bt-sidebar">
+                <div class="iq-menu-bt align-self-center">
+                    <div class="wrapper-menu">
+                        <div class="main-circle"><i class="las la-bars"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="data-scrollbar" data-scroll="1">
+            <nav class="iq-sidebar-menu">
+                <ul id="iq-sidebar-toggle" class="iq-menu">
+                <li class="{{#compare active '==' 'index'}}active{{ else }} {{/compare}}"><a href="{{path}}backend/index.html"
+                                class=""><i class="las la-warehouse"></i><span>Dashboard </span></a></li>
+                    <li>
+                        <a href="#layouts" class="collapsed" data-toggle="collapse"
+                            aria-expanded="false"><i class="lab la-jira iq-arrow-left"></i><span>Layout</span><i
+                                class="las la-plus iq-arrow-right arrow-active"></i><i
+                                class="las la-minus iq-arrow-right arrow-hover"></i></a>
+                        <ul id="layouts" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
+                            <li class="{{#compare active '==' 'layout-1'}}active{{ else }} {{/compare}}"><a
+                                    href="{{path}}backend/layout-1.html" class=""><i
+                                        class="las la-star-half-alt"></i><span>Layout 1 </span></a></li>
+                            <li class="{{#compare active '==' 'layout-2'}}active{{ else }} {{/compare}}"><a
+                                    href="{{path}}backend/layout-2.html" class=""><i class="las la-comments"></i><span>Layout
+                                        2</span></a></li>
+                            <li class="{{#compare active '==' 'layout-3'}}active{{ else }} {{/compare}}"><a
+                                    href="{{path}}backend/layout-3.html" class=""><i
+                                        class="las la-user-friends"></i><span>Layout 3</span></a></li>
+                            <li class="{{#compare active '==' 'layout-4'}}active{{ else }} {{/compare}}"><a
+                                    href="{{path}}backend/layout-4.html" class=""><i
+                                        class="las la-star-half-alt"></i><span>Layout 4 </span></a></li>
+                            <li class="{{#compare active '==' 'layout-5'}}active{{ else }} {{/compare}}"><a
+                                    href="{{path}}backend/layout-5.html" class=""><i class="las la-comments"></i><span>Layout
+                                        5</span></a></li>
+                            <li class="{{#compare active '==' 'layout-6'}}active{{ else }} {{/compare}}"><a
+                                    href="{{path}}backend/layout-6.html" class=""><i
+                                        class="las la-user-friends"></i><span>Layout 6</span></a></li>
+                            <li class="{{#compare active '==' 'layout-7'}}active{{ else }} {{/compare}}"><a
+                                    href="{{path}}backend/layout-7.html" class=""><i
+                                        class="las la-star-half-alt"></i><span>Layout 7 </span></a></li>
+                            <li class="{{#compare active '==' 'layout-8'}}active{{ else }} {{/compare}}"><a
+                                    href="{{path}}backend/layout-8.html" class=""><i class="las la-comments"></i><span>Layout
+                                        8</span></a></li>
+                            <li class="{{#compare active '==' 'layout-9'}}active{{ else }} {{/compare}}"><a
+                                    href="{{path}}backend/layout-9.html" class=""><i
+                                        class="las la-user-friends"></i><span>Layout 9</span></a></li>
+                            <li class="{{#compare active '==' 'layout-10'}}active{{ else }} {{/compare}}"><a
+                                    href="{{path}}backend/layout-10.html" class=""><i
+                                        class="las la-star-half-alt"></i><span>Layout 10 </span></a></li>
+                            <li class="{{#compare active '==' 'layout-11'}}active{{ else }} {{/compare}}"><a
+                                    href="{{path}}backend/layout-11.html" class=""><i class="las la-comments"></i><span>Layout
+                                        11</span></a></li>
+                            <li class="{{#compare active '==' 'layout-12'}}active{{ else }} {{/compare}}"><a
+                                    href="{{path}}backend/layout-12.html" class=""><i
+                                        class="las la-user-friends"></i><span>Layout 12</span></a></li>
+                            <li class="{{#compare active '==' 'layout-13'}}active{{ else }} {{/compare}}"><a
+                                    href="{{path}}backend/layout-13.html" class=""><i
+                                        class="las la-star-half-alt"></i><span>Layout 13 </span></a></li>
+                            <li class="{{#compare active '==' 'layout-14'}}active{{ else }} {{/compare}}"><a
+                                    href="{{path}}backend/layout-14.html" class=""><i class="las la-comments"></i><span>Layout
+                                        14</span></a></li>
+                            <li class="{{#compare active '==' 'layout-15'}}active{{ else }} {{/compare}}"><a
+                                    href="{{path}}backend/layout-15.html" class=""><i
+                                        class="las la-user-friends"></i><span>Layout 15</span></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#app-design" class="collapsed" data-toggle="collapse"
+                            aria-expanded="false"><i class="lab la-patreon iq-arrow-left"></i><span>App Design</span><i
+                                class="las la-plus iq-arrow-right arrow-active"></i><i
+                                class="las la-minus iq-arrow-right arrow-hover"></i></a>
+                        <ul id="app-design" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
+                            <li>
+                                <a href="#music" class="collapsed" data-toggle="collapse"
+                                    aria-expanded="false"><i class="lab la-wpforms"></i><span>Music</span><i
+                                        class="las la-plus iq-arrow-right arrow-active"></i><i
+                                        class="las la-minus iq-arrow-right arrow-hover"></i></a>
+                                <ul id="music" class="iq-submenu collapse" data-parent="#app-design">
+                                    <li class="{{#compare active '==' 'music-home'}}active{{ else }} {{/compare}}"><a
+                                            href="music-home.html"><i class="las la-book"></i>home</a></li>
+                                    <li class="{{#compare active '==' 'music-latest'}}active{{ else }} {{/compare}}"><a
+                                            href="music-latest.html"><i class="las la-edit"></i>Latest</a></li>
+                                    <li class="{{#compare active '==' 'music-albums'}}active{{ else }} {{/compare}}"><a
+                                            href="music-albums.html"><i class="las la-toggle-off"></i>albums</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#book" class="collapsed" data-toggle="collapse"
+                                    aria-expanded="false"><i class="las la-book"></i><span>Books</span><i
+                                        class="las la-plus iq-arrow-right arrow-active"></i><i
+                                        class="las la-minus iq-arrow-right arrow-hover"></i></a>
+                                <ul id="book" class="iq-submenu collapse" data-parent="#app-design">
+                                    <li class="{{#compare active '==' 'book-shop'}}active{{ else }} {{/compare}}"><a
+                                            href="book-shop.html"><i class="las la-shopping-cart"></i>Shop</a>
+                                    </li>
+                                    <li class="{{#compare active '==' 'book-category'}}active{{ else }} {{/compare}}"><a
+                                            href="book-category.html"><i
+                                                class="ri-function-line"></i>Category</a></li>
+                                    <li class="{{#compare active '==' 'bookpage'}}active{{ else }} {{/compare}}"><a
+                                            href="bookpage.html"><i class="las la-book"></i>Book Page</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#idrive" class="collapsed" data-toggle="collapse"
+                                    aria-expanded="false"><i class="lab la-google-drive"></i><span>Idrive</span><i
+                                        class="las la-plus iq-arrow-right arrow-active"></i><i
+                                        class="las la-minus iq-arrow-right arrow-hover"></i></a>
+                                <ul id="idrive" class="iq-submenu collapse" data-parent="#app-design">
+                                    <li class="{{#compare active '==' 'idrive-home'}}active{{ else }} {{/compare}}"><a
+                                            href="idrive-home.html"><i class="lab la-stack-exchange"></i>Drive
+                                            1</a></li>
+                                    <li class="{{#compare active '==' 'idrive-home1'}}active{{ else }} {{/compare}}"><a
+                                            href="idrive-home1.html"><i class="las la-database"></i>Drive 2</a>
+                                    </li>
+                                    <li class="{{#compare active '==' 'idrive-home2'}}active{{ else }} {{/compare}}"><a
+                                            href="idrive-home2.html"><i class="las la-memory"></i>Drive 3</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#reporting" class="collapsed" data-toggle="collapse"
+                                    aria-expanded="false"><i class="las la-passport"></i><span>Reporting</span><i
+                                        class="las la-plus iq-arrow-right arrow-active"></i><i
+                                        class="las la-minus iq-arrow-right arrow-hover"></i></a>
+                                <ul id="reporting" class="iq-submenu collapse" data-parent="#app-design">
+                                    <li class="{{#compare active '==' 'reporting1'}}active{{ else }} {{/compare}}"><a
+                                            href="reporting1.html"><i class="las la-file"></i>reporting 1</a>
+                                    </li>
+                                    <li class="{{#compare active '==' 'reporting2'}}active{{ else }} {{/compare}}"><a
+                                            href="reporting2.html"><i class="las la-newspaper"></i>reporting
+                                            2</a></li>
+                                    <li class="{{#compare active '==' 'reporting3'}}active{{ else }} {{/compare}}"><a
+                                            href="reporting3.html"><i class="las la-file-invoice"></i>reporting
+                                            3</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#server" class="collapsed" data-toggle="collapse"
+                                    aria-expanded="false"><i class="las la-server"></i><span>Server Monitoring</span><i
+                                        class="las la-plus iq-arrow-right arrow-active"></i><i
+                                        class="las la-minus iq-arrow-right arrow-hover"></i></a>
+                                <ul id="server" class="iq-submenu collapse" data-parent="#app-design">
+                                    <li
+                                        class="{{#compare active '==' 'server-monitoring'}}active{{ else }} {{/compare}}">
+                                        <a href="server-monitoring.html"><i class="las la-columns"></i>Server
+                                            Monitoring</a></li>
+                                    <li
+                                        class="{{#compare active '==' 'website-monitoring'}}active{{ else }} {{/compare}}">
+                                        <a href="server-website-monitoring.html"><i
+                                                class="las la-digital-tachograph"></i>Website Monitoring</a></li>
+                                    <li class="{{#compare active '==' 'api-monitiring'}}active{{ else }} {{/compare}}">
+                                        <a href="server-api-monitiring.html"><i class="las la-hdd"></i>API
+                                            Monitoring</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#crm" class="collapsed" data-toggle="collapse"
+                                    aria-expanded="false"><i class="las la-chalkboard-teacher"></i><span>CRM</span><i
+                                        class="las la-plus iq-arrow-right arrow-active"></i><i
+                                        class="las la-minus iq-arrow-right arrow-hover"></i></a>
+                                <ul id="crm" class="iq-submenu collapse" data-parent="#app-design">
+                                    <li class="{{#compare active '==' 'crm1'}}active{{ else }} {{/compare}}"><a
+                                            href="crm1.html"><i class="las la-poll"></i>CRM 1</a></li>
+                                    <li class="{{#compare active '==' 'crm2'}}active{{ else }} {{/compare}}"><a
+                                            href="crm2.html"><i class="las la-poll-h"></i>CRM 2</a></li>
+                                    <li class="{{#compare active '==' 'crm3'}}active{{ else }} {{/compare}}"><a
+                                            href="crm3.html"><i class="las la-money-check"></i>CRM 3</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#userinfo" class="collapsed" data-toggle="collapse"
+                                    aria-expanded="false"><i class="las la-user"></i><span>User Management</span><i
+                                        class="las la-plus iq-arrow-right arrow-active"></i><i
+                                        class="las la-minus iq-arrow-right arrow-hover"></i></a>
+                                <ul id="userinfo" class="iq-submenu collapse" data-parent="#app-design">
+                                    <li class="{{#compare active '==' 'user-profile'}}active{{ else }} {{/compare}}"><a
+                                            href="{{path}}backend/user-profile.html"><i class="las la-id-card"></i>User Profile</a></li>
+                                    <li
+                                        class="{{#compare active '==' 'user-profile-edit'}}active{{ else }} {{/compare}}">
+                                        <a href="{{path}}backend/user-profile-edit.html"><i class="las la-user-edit"></i>User Edit</a>
+                                    </li>
+                                    <li class="{{#compare active '==' 'user-add'}}active{{ else }} {{/compare}}"><a
+                                            href="{{path}}backend/user-add.html"><i class="las la-user-plus"></i>User Add</a></li>
+                                    <li class="{{#compare active '==' 'user-list'}}active{{ else }} {{/compare}}"><a
+                                            href="{{path}}backend/user-list.html"><i class="las la-list-alt"></i>User List</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#mailbox" class="collapsed" data-toggle="collapse"
+                                    aria-expanded="false"><i class="las la-envelope-open"></i><span>Email</span><i
+                                        class="las la-plus iq-arrow-right arrow-active"></i><i
+                                        class="las la-minus iq-arrow-right arrow-hover"></i></a>
+                                <ul id="mailbox" class="iq-submenu collapse" data-parent="#app-design">
+                                    <li class="{{#compare active '==' 'email'}}active{{ else }} {{/compare}}"><a
+                                            href="{{path}}backend/email.html"><i class="las la-inbox"></i>Inbox</a></li>
+                                    <li class="{{#compare active '==' 'email-compose'}}active{{ else }} {{/compare}}"><a
+                                            href="{{path}}backend/email-compose.html"><i class="las la-edit"></i>Email Compose</a></li>
+                                </ul>
+                            </li>
+                            <li class="{{#compare active '==' 'chat'}}active{{ else }} {{/compare}}">
+                                <a href="{{path}}backend/chat.html" class=""><i
+                                        class="lab la-rocketchat"></i><span>Chat</span></a>
+                            </li>
+                            <li class="{{#compare active '==' 'todo'}}active{{ else }} {{/compare}}">
+                                <a href="{{path}}backend/todo.html" class=""><i
+                                        class="las la-clipboard-check"></i><span>Todo</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                   
+                    {{#outArray "widget" skipBackend}}
+                    <li>
+                        <a href="#widget" class="collapsed" data-toggle="collapse"
+                            aria-expanded="false"><i class="las la-bullseye iq-arrow-left"></i><span>widget</span><i
+                                class="las la-plus iq-arrow-right arrow-active"></i><i
+                                class="las la-minus iq-arrow-right arrow-hover"></i></a>
+                        <ul id="widget" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
+                            <li class="{{#compare active '==' 'widget-simple'}}active{{ else }} {{/compare}}"><a
+                                    href="{{path}}backend/widget-simple.html"><i class="las la-window-minimize"></i>widget simple</a>
+                            </li>
+                            <li class="{{#compare active '==' 'widget-chart'}}active{{ else }} {{/compare}}"><a
+                                    href="{{path}}backend/widget-chart.html"><i class="las la-chart-bar"></i>widget chart</a></li>
+                        </ul>
+                    </li>
+                    {{/outArray}}
+                    {{#outArray "ui" skipBackend}}
+                    <li>
+                        <a href="#ui-elements" class="collapsed" data-toggle="collapse"
+                            aria-expanded="false"><i class="lab la-elementor iq-arrow-left"></i><span>UI
+                                Elements</span><i class="las la-plus iq-arrow-right arrow-active"></i><i
+                                class="las la-minus iq-arrow-right arrow-hover"></i></a>
+                        <ul id="ui-elements" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
+                            <li class="{{#compare active '==' 'ui-avatars'}}active{{ else }} {{/compare}}"><a
+                                    href="{{path}}backend/ui-avatars.html" class=""><i
+                                        class="las la-user-circle"></i>Avatars</a></li>
+                            <li class="{{#compare active '==' 'ui-alerts'}}active{{ else }} {{/compare}}"><a
+                                    href="{{path}}backend/ui-alerts.html"><i class="las la-tag"></i>Alerts</a></li>
+                            <li class="{{#compare active '==' 'ui-badges'}}active{{ else }} {{/compare}}"><a
+                                    href="{{path}}backend/ui-badges.html"><i class="lab la-atlassian"></i>Badges</a></li>
+                            <li class="{{#compare active '==' 'ui-breadcrumb'}}active{{ else }} {{/compare}}"><a
+                                    href="{{path}}backend/ui-breadcrumb.html"><i class="las la-bars"></i>Breadcrumb</a></li>
+                            <li class="{{#compare active '==' 'ui-buttons'}}active{{ else }} {{/compare}}"><a
+                                    href="{{path}}backend/ui-buttons.html"><i class="las la-tablet"></i>Buttons</a></li>
+                            <li class="{{#compare active '==' 'ui-buttons-group'}}active{{ else }} {{/compare}}"><a
+                                    href="{{path}}backend/ui-buttons-group.html"><i class="las la-eraser"></i>Buttons Group</a></li>
+                            <li class="{{#compare active '==' 'ui-boxshadow'}}active{{ else }} {{/compare}}"><a
+                                    href="{{path}}backend/ui-boxshadow.html" class=""><i
+                                        class="las la-chess-board"></i>Box Shadow</a></li>
+                            <li class="{{#compare active '==' 'ui-colors'}}active{{ else }} {{/compare}}"><a
+                                    href="{{path}}backend/ui-colors.html"><i class="las la-palette"></i>colors</a></li>
+                            <li class="{{#compare active '==' 'ui-cards'}}active{{ else }} {{/compare}}"><a
+                                    href="{{path}}backend/ui-cards.html"><i class="las la-credit-card"></i>Cards</a></li>
+                            <li class="{{#compare active '==' 'ui-carousel'}}active{{ else }} {{/compare}}"><a
+                                    href="{{path}}backend/ui-carousel.html"><i class="las la-film"></i>Carousel</a></li>
+                            <li class="{{#compare active '==' 'ui-grid'}}active{{ else }} {{/compare}}"><a
+                                    href="{{path}}backend/ui-grid.html"><i class="las la-border-all"></i>Grid</a></li>
+                            <li class="{{#compare active '==' 'ui-helper-classes'}}active{{ else }} {{/compare}}"><a
+                                    href="{{path}}backend/ui-helper-classes.html"><i class="las la-stream"></i>Helper classes</a></li>
+                            <li class="{{#compare active '==' 'ui-images'}}active{{ else }} {{/compare}}"><a
+                                    href="{{path}}backend/ui-images.html"><i class="las la-images"></i>Images</a></li>
+                            <li class="{{#compare active '==' 'ui-list-group'}}active{{ else }} {{/compare}}"><a
+                                    href="{{path}}backend/ui-list-group.html"><i class="las la-list"></i>list Group</a></li>
+                            <li class="{{#compare active '==' 'ui-media-object'}}active{{ else }} {{/compare}}"><a
+                                    href="{{path}}backend/ui-media-object.html"><i class="las la-ad"></i>Media</a></li>
+                            <li class="{{#compare active '==' 'ui-modal'}}active{{ else }} {{/compare}}"><a
+                                    href="{{path}}backend/ui-modal.html"><i class="las la-columns"></i>Modal</a></li>
+                            <li class="{{#compare active '==' 'ui-notifications'}}active{{ else }} {{/compare}}"><a
+                                    href="{{path}}backend/ui-notifications.html"><i class="las la-bell"></i>Notifications</a></li>
+                            <li class="{{#compare active '==' 'ui-pagination'}}active{{ else }} {{/compare}}"><a
+                                    href="{{path}}backend/ui-pagination.html"><i class="las la-ellipsis-h"></i>Pagination</a></li>
+                            <li class="{{#compare active '==' 'ui-popovers'}}active{{ else }} {{/compare}}"><a
+                                    href="{{path}}backend/ui-popovers.html"><i class="las la-eraser"></i>Popovers</a></li>
+                            <li class="{{#compare active '==' 'ui-progressbars'}}active{{ else }} {{/compare}}"><a
+                                    href="{{path}}backend/ui-progressbars.html"><i class="las la-hdd"></i>Progressbars</a></li>
+                            <li class="{{#compare active '==' 'ui-typography'}}active{{ else }} {{/compare}}"><a
+                                    href="{{path}}backend/ui-typography.html"><i class="las la-keyboard"></i>Typography</a></li>
+                            <li class="{{#compare active '==' 'ui-tabs'}}active{{ else }} {{/compare}}"><a
+                                    href="{{path}}backend/ui-tabs.html"><i class="las la-database"></i>Tabs</a></li>
+                            <li class="{{#compare active '==' 'ui-tooltips'}}active{{ else }} {{/compare}}"><a
+                                    href="{{path}}backend/ui-tooltips.html"><i class="las la-magnet"></i>Tooltips</a></li>
+                            <li class="{{#compare active '==' 'ui-embed-video'}}active{{ else }} {{/compare}}"><a
+                                    href="{{path}}backend/ui-embed-video.html"><i class="las la-video"></i> Video </a></li>
+                        </ul>
+                    </li>
+                    {{/outArray}}
+                    <li>
+                        <a href="#plugin" class="collapsed" data-toggle="collapse"
+                            aria-expanded="false"><i class="las la-plug iq-arrow-left"></i><span>Plugin</span><i
+                                class="las la-plus iq-arrow-right arrow-active"></i><i
+                                class="las la-minus iq-arrow-right arrow-hover"></i></a>
+                        <ul id="plugin" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
+                            <li class="{{#compare active '==' 'rating'}}active{{ else }} {{/compare}}"><a
+                                    href="{{path}}backend/rating.html"><i class="las la-star"></i>Rating</a></li>
+                            <li class="{{#compare active '==' 'tree-view'}}active{{ else }} {{/compare}}"><a
+                                    href="{{path}}backend/tree-view.html"><i class="las la-tree"></i>Treeview</a></li>
+                            <li class="{{#compare active '==' 'sweetalert'}}active{{ else }} {{/compare}}"><a
+                                    href="{{path}}backend/sweetalert.html"><i class="las la-tag"></i>Sweetalert</a></li>
+                            <li class="{{#compare active '==' 'loader'}}active{{ else }} {{/compare}}"><a
+                                    href="{{path}}backend/loader.html"><i class="las la-circle-notch"></i>Loader</a></li>
+
+                        </ul>
+                    </li>
+                    {{#outArray "form" skipBackend}}
+                    <li>
+                        <a href="#forms" class="collapsed" data-toggle="collapse"
+                            aria-expanded="false"><i class="lab la-wpforms iq-arrow-left"></i><span>Forms</span><i
+                                class="las la-plus iq-arrow-right arrow-active"></i><i
+                                class="las la-minus iq-arrow-right arrow-hover"></i></a>
+                        <ul id="forms" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
+                            <li>
+                                <a href="#form-controls" class="collapsed" data-toggle="collapse"
+                                    aria-expanded="false"><i class="lab la-wpforms"></i><span>Form Controls</span><i
+                                        class="las la-plus iq-arrow-right arrow-active"></i><i
+                                        class="las la-minus iq-arrow-right arrow-hover"></i></a>
+                                <ul id="form-controls" class="iq-submenu collapse" data-parent="#forms">
+                                    <li class="{{#compare active '==' 'form-layout'}}active{{ else }} {{/compare}}"><a
+                                            href="{{path}}backend/form-layout.html"><i class="las la-book"></i>Form Elements</a></li>
+                                    <li
+                                        class="{{#compare active '==' 'form-input-group'}}active{{ else }} {{/compare}}">
+                                        <a href="{{path}}backend/form-input-group.html"><i class="las la-keyboard"></i>Form Input</a>
+                                    </li>
+                                    <li class="{{#compare active '==' 'form-validation'}}active{{ else }} {{/compare}}">
+                                        <a href="{{path}}backend/form-validation.html"><i class="las la-edit"></i>Form Validation</a>
+                                    </li>
+                                    <li class="{{#compare active '==' 'form-switch'}}active{{ else }} {{/compare}}"><a
+                                            href="{{path}}backend/form-switch.html"><i class="las la-toggle-off"></i>Form Switch</a>
+                                    </li>
+                                    <li class="{{#compare active '==' 'form-chechbox'}}active{{ else }} {{/compare}}"><a
+                                            href="{{path}}backend/form-chechbox.html"><i class="las la-check-square"></i>Form
+                                            Checkbox</a></li>
+                                    <li class="{{#compare active '==' 'form-radio'}}active{{ else }} {{/compare}}"><a
+                                            href="{{path}}backend/form-radio.html"><i class="las la-yin-yang"></i>Form Radio</a></li>
+                                    <li class="{{#compare active '==' 'form-textarea'}}active{{ else }} {{/compare}}"><a
+                                            href="{{path}}backend/form-textarea.html"><i class="las la-text-height"></i>Form
+                                            Textarea</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#form-widget" class="collapsed" data-toggle="collapse"
+                                    aria-expanded="false"><i class="lab la-elementor"></i><span>Form Widget</span><i
+                                        class="las la-plus iq-arrow-right arrow-active"></i><i
+                                        class="las la-minus iq-arrow-right arrow-hover"></i></a>
+                                <ul id="form-widget" class="iq-submenu collapse" data-parent="#forms">
+                                    <li class="{{#compare active '==' 'form-datepicker'}}active{{ else }} {{/compare}}">
+                                        <a href="{{path}}backend/form-datepicker.html"><i class="las la-calendar"></i>Datepicket</a>
+                                    </li>
+                                    <li class="{{#compare active '==' 'form-select'}}active{{ else }} {{/compare}}"><a
+                                            href="{{path}}backend/form-select.html"><i class="las la-object-group"></i>Select2</a></li>
+                                    <li
+                                        class="{{#compare active '==' 'form-file-uploader'}}active{{ else }} {{/compare}}">
+                                        <a href="{{path}}backend/form-file-uploader.html"><i class="las la-cloud-download-alt"></i>File
+                                            Upload</a></li>
+                                    <li class="{{#compare active '==' 'form-quill'}}active{{ else }} {{/compare}}"><a
+                                            href="{{path}}backend/form-quill.html"><i class="las la-text-height"></i>Form quill</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#wizard-form" class="collapsed" data-toggle="collapse"
+                                    aria-expanded="false"><i class="las la-archive"></i><span>Forms Wizard</span><i
+                                        class="las la-plus iq-arrow-right arrow-active"></i><i
+                                        class="las la-minus iq-arrow-right arrow-hover"></i></a>
+                                <ul id="wizard-form" class="iq-submenu collapse" data-parent="#forms">
+                                    <li class="{{#compare active '==' 'form-wizard'}}active{{ else }} {{/compare}}"><a
+                                            href="{{path}}backend/form-wizard.html"><i class="las la-box"></i>Simple Wizard</a></li>
+                                    <li
+                                        class="{{#compare active '==' 'form-wizard-validate'}}active{{ else }} {{/compare}}">
+                                        <a href="{{path}}backend/form-wizard-validate.html"><i class="las la-inbox"></i>Validate
+                                            Wizard</a></li>
+                                    <li
+                                        class="{{#compare active '==' 'form-wizard-vertical'}}active{{ else }} {{/compare}}">
+                                        <a href="{{path}}backend/form-wizard-vertical.html"><i class="las la-file-archive"></i>Vertical
+                                            Wizard</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    {{/outArray}}
+                    <li>
+                        <a href="#tables" class="collapsed" data-toggle="collapse"
+                            aria-expanded="false"><i class="las la-table iq-arrow-left"></i><span>Table</span><i
+                                class="las la-plus iq-arrow-right arrow-active"></i><i
+                                class="las la-minus iq-arrow-right arrow-hover"></i></a>
+                        <ul id="tables" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
+                            <li class="{{#compare active '==' 'tables-basic'}}active{{ else }} {{/compare}}"><a
+                                    href="{{path}}backend/tables-basic.html"><i class="las la-border-all"></i>Basic Tables</a></li>
+                            <li class="{{#compare active '==' 'data-table'}}active{{ else }} {{/compare}}"><a
+                                    href="{{path}}backend/data-table.html"><i class="lab la-microsoft"></i>Data Table</a></li>
+                            <li class="{{#compare active '==' 'table-editable'}}active{{ else }} {{/compare}}"><a
+                                    href="{{path}}backend/table-editable.html"><i class="lab la-buromobelexperte"></i>Editable Table</a>
+                            </li>
+                            <li class="{{#compare active '==' 'table-tree'}}active{{ else }} {{/compare}}"><a
+                                    href="{{path}}backend/table-tree.html"><i class="las la-tree"></i>Table Tree</a></li>
+                        </ul>
+                    </li>
+                    {{#outArray "icons" skipBackend}}
+                    <li>
+                        <a href="#icons" class="collapsed" data-toggle="collapse"
+                            aria-expanded="false"><i class="las la-list iq-arrow-left"></i><span>Icons</span><i
+                                class="las la-plus iq-arrow-right arrow-active"></i><i
+                                class="las la-minus iq-arrow-right arrow-hover"></i></a>
+                        <ul id="icons" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
+                            <li class="{{#compare active '==' 'icon-dripicons'}}active{{ else }} {{/compare}}"><a
+                                    href="{{path}}backend/icon-dripicons.html"><i class="las la-layer-group"></i>Dripicons</a></li>
+                            <li class="{{#compare active '==' 'icon-fontawesome'}}active{{ else }} {{/compare}}"><a
+                                    href="{{path}}backend/icon-fontawesome.html"><i class="lab la-facebook-f"></i>Font Awesome </a></li>
+                            <li class="{{#compare active '==' 'icon-lineawesome'}}active{{ else }} {{/compare}}"><a
+                                    href="{{path}}backend/icon-lineawesome.html"><i class="las la-grip-lines-vertical"></i>line
+                                    Awesome</a></li>
+                            <li class="{{#compare active '==' 'icon-remixicon'}}active{{ else }} {{/compare}}"><a
+                                    href="{{path}}backend/icon-remixicon.html"><i
+                                        class="lab la-creative-commons-remix"></i>Remixicon</a></li>
+                            <li class="{{#compare active '==' 'icon-unicons'}}active{{ else }} {{/compare}}"><a
+                                    href="{{path}}backend/icon-unicons.html"><i class="las la-underline"></i>unicons</a></li>
+                        </ul>
+                    </li>
+                    {{/outArray}}
+                    {{#outArray "gallary" skipBackend}}
+                    <li>
+                        <a href="#gallary" class="collapsed" data-toggle="collapse"
+                            aria-expanded="false"><i class="las la-images iq-arrow-left"></i><span>Gallery</span><i
+                                class="las la-plus iq-arrow-right arrow-active"></i><i
+                                class="las la-minus iq-arrow-right arrow-hover"></i></a>
+                        <ul id="gallary" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
+                            <li class="{{#compare active '==' 'gallery-grid'}}active{{ else }} {{/compare}}"><a
+                                    href="{{path}}backend/gallery-grid.html"><i class="las la-icons"></i>Gallery Grid</a></li>
+                            <li class="{{#compare active '==' 'gallery-grid-desc'}}active{{ else }} {{/compare}}"><a
+                                    href="{{path}}backend/gallery-grid-desc.html"><i class="las la-file-image"></i>Gallery Grid Desc</a>
+                            </li>
+                            <li class="{{#compare active '==' 'gallery-masonry'}}active{{ else }} {{/compare}}"><a
+                                    href="{{path}}backend/gallery-masonry.html"><i class="las la-film"></i>Masonry Gallery</a></li>
+                            <li class="{{#compare active '==' 'gallery-masonry-desc'}}active{{ else }} {{/compare}}"><a
+                                    href="{{path}}backend/gallery-masonry-desc.html"><i class="las la-stream"></i>Masonry with Desc</a>
+                            </li>
+                            <li class="{{#compare active '==' 'gallery-hover-effect'}}active{{ else }} {{/compare}}"><a
+                                    href="{{path}}backend/gallery-hover-effect.html"><i class="las la-wallet"></i>Hover Effects</a></li>
+                        </ul>
+                    </li>
+                    {{/outArray}}
+                    {{#outArray "blogs" skipBackend}}
+                    <li>
+                        <a href="#blog" class="collapsed" data-toggle="collapse"
+                            aria-expanded="false"><i class="lab la-blogger iq-arrow-left"></i></i><span>Blog</span><i
+                                class="las la-plus iq-arrow-right arrow-active"></i><i
+                                class="las la-minus iq-arrow-right arrow-hover"></i></a>
+                        <ul id="blog" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
+                            <li class="{{#compare active '==' 'blog-simple'}}active{{ else }} {{/compare}}"><a
+                                    href="{{path}}backend/blog-simple.html"><i class="las la-boxes"></i>Simple Blog</a></li>
+                            <li class="{{#compare active '==' 'blog-grid'}}active{{ else }} {{/compare}}"><a
+                                    href="{{path}}backend/blog-grid.html"><i class="lab la-buromobelexperte"></i>Blog Grid</a></li>
+                            <li class="{{#compare active '==' 'blog-list'}}active{{ else }} {{/compare}}"><a
+                                    href="{{path}}backend/blog-list.html"><i class="las la-clipboard-list"></i>Blog List</a></li>
+                            <li class="{{#compare active '==' 'blog-detail'}}active{{ else }} {{/compare}}"><a
+                                    href="{{path}}backend/blog-detail.html"><i class="las la-film"></i>Blog-details</a></li>
+                        </ul>
+                    </li>
+                    {{/outArray}}
+                    {{#outArray "chart" skipBackend}}
+                    <li>
+                        <a href="#chart" class="collapsed" data-toggle="collapse"
+                            aria-expanded="false"><i class="las la-chart-bar iq-arrow-left"></i><span>Charts</span><i
+                                class="las la-plus iq-arrow-right arrow-active"></i><i
+                                class="las la-minus iq-arrow-right arrow-hover"></i></a>
+                        <ul id="chart" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
+                            <li class="{{#compare active '==' 'chart-apex'}}active{{ else }} {{/compare}}"><a
+                                    href="{{path}}backend/chart-apex.html"><i class="las la-chart-area"></i>Apex Chart</a></li>
+                            <li class="{{#compare active '==' 'chart-am'}}active{{ else }} {{/compare}}"><a
+                                    href="{{path}}backend/chart-am.html"><i class="las la-project-diagram"></i>Am Chart</a></li>
+                            <li class="{{#compare active '==' 'chart-morris'}}active{{ else }} {{/compare}}"><a
+                                    href="{{path}}backend/chart-morris.html"><i class="las la-chart-pie"></i>Morrish chart</a></li>
+                            <li class="{{#compare active '==' 'chart-high'}}active{{ else }} {{/compare}}"><a
+                                    href="{{path}}backend/chart-high.html"><i class="las la-chart-line"></i>High chart</a></li>
+                        </ul>
+                    </li>
+                    {{/outArray}}
+                    {{#outArray "map" skipBackend}}
+                    <li>
+                        <a href="#map" class="collapsed" data-toggle="collapse" aria-expanded="false"><i
+                                class="las la-map-marker iq-arrow-left"></i><span>Map</span><i
+                                class="las la-plus iq-arrow-right arrow-active"></i><i
+                                class="las la-minus iq-arrow-right arrow-hover"></i></a>
+                        <ul id="map" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
+                            <li class="{{#compare active '==' 'map-google'}}active{{ else }} {{/compare}}"><a
+                                    href="{{path}}backend/map-google.html"><i class="las la-map-signs"></i>Google Map</a></li>
+                            <li class="{{#compare active '==' 'map-vector'}}active{{ else }} {{/compare}}"><a
+                                    href="{{path}}backend/map-vector.html"><i class="las la-globe-europe"></i>Vector Map</a></li>
+                        </ul>
+                    </li>
+                    {{/outArray}}
+                    {{#outArray "auth" skipBackend}}
+                    <li>
+                        <a href="#authentication" class="collapsed" data-toggle="collapse"
+                            aria-expanded="false"><i
+                                class="las la-pager iq-arrow-left"></i><span>Authentication</span><i
+                                class="las la-plus iq-arrow-right arrow-active"></i><i
+                                class="las la-minus iq-arrow-right arrow-hover"></i></a>
+                        <ul id="authentication" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
+                            <li class="{{#compare active '==' 'auth-sign-in'}}active{{ else }} {{/compare}}"><a
+                                    href="{{path}}backend/auth-sign-in.html"><i class="las la-sign-in-alt"></i>Login</a></li>
+                            <li class="{{#compare active '==' 'auth-sign-up'}}active{{ else }} {{/compare}}"><a
+                                    href="{{path}}backend/auth-sign-up.html"><i class="las la-sign-out-alt"></i>Register</a></li>
+                            <li class="{{#compare active '==' 'auth-recoverpw'}}active{{ else }} {{/compare}}"><a
+                                    href="{{path}}backend/auth-recoverpw.html"><i class="las la-unlock-alt"></i>Recover Password</a>
+                            </li>
+                            <li class="{{#compare active '==' 'auth-confirm-mail'}}active{{ else }} {{/compare}}"><a
+                                    href="{{path}}backend/auth-confirm-mail.html"><i class="las la-envelope-open-text"></i>Confirm
+                                    Mail</a></li>
+                            <li class="{{#compare active '==' 'auth-lock-screen'}}active{{ else }} {{/compare}}"><a
+                                    href="{{path}}backend/auth-lock-screen.html"><i class="las la-lock"></i>Lock Screen</a></li>
+                        </ul>
+                    </li>
+                    {{/outArray}}
+                    {{#outArray "extras" skipBackend}}
+                    <li>
+                        <a href="#extra-pages" class="collapsed" data-toggle="collapse"
+                            aria-expanded="false"><i class="lab la-readme iq-arrow-left"></i><span>Extra Pages</span><i
+                                class="las la-plus iq-arrow-right arrow-active"></i><i
+                                class="las la-minus iq-arrow-right arrow-hover"></i></a>
+                        <ul id="extra-pages" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
+                            {{#outArray "contact" skipBackend}}
+                            <li>
+                                <a href="#contact-list" class="collapsed" data-toggle="collapse"
+                                    aria-expanded="false"><i class="las la-address-book"></i><span>Contact</span><i
+                                        class="las la-plus iq-arrow-right arrow-active"></i><i
+                                        class="las la-minus iq-arrow-right arrow-hover"></i></a>
+                                <ul id="contact-list" class="iq-submenu collapse" data-parent="#extra-pages">
+                                    <li class="{{#compare active '==' 'contact-list'}}active{{ else }} {{/compare}}"><a
+                                            href="{{path}}backend/contact-list.html"><i class="las la-file-alt"></i>Contact List</a>
+                                    </li>
+                                    <li class="{{#compare active '==' 'contact-detail'}}active{{ else }} {{/compare}}">
+                                        <a href="{{path}}backend/contact-detail.html"><i class="las la-address-card"></i>Contact
+                                            Details</a></li>
+                                </ul>
+                            </li>
+                            {{/outArray}}
+                            <li>
+                                <a href="#timeline" class="collapsed" data-toggle="collapse"
+                                    aria-expanded="false"><i class="las la-atom"></i><span>Timeline</span><i
+                                        class="las la-plus iq-arrow-right arrow-active"></i><i
+                                        class="las la-minus iq-arrow-right arrow-hover"></i></a>
+                                <ul id="timeline" class="iq-submenu collapse" data-parent="#extra-pages">
+                                    <li class="{{#compare active '==' 'timeline'}}active{{ else }} {{/compare}}"><a
+                                            href="{{path}}backend/timeline.html"><i class="las la-circle-notch"></i>timeline 1</a></li>
+                                    <li class="{{#compare active '==' 'timeline-1'}}active{{ else }} {{/compare}}"><a
+                                            href="{{path}}backend/timeline-1.html"><i class="las la-compact-disc"></i>timeline 2</a>
+                                    </li>
+                                    <li class="{{#compare active '==' 'timeline-2'}}active{{ else }} {{/compare}}"><a
+                                            href="{{path}}backend/timeline-2.html"><i class="las la-cog"></i>timeline 3</a></li>
+                                    <li class="{{#compare active '==' 'timeline-3'}}active{{ else }} {{/compare}}"><a
+                                            href="{{path}}backend/timeline-3.html"><i class="las la-snowflake"></i>timeline 4</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#pricing" class="collapsed" data-toggle="collapse"
+                                    aria-expanded="false"><i class="lab la-paypal"></i><span>Pricing</span><i
+                                        class="las la-plus iq-arrow-right arrow-active"></i><i
+                                        class="las la-minus iq-arrow-right arrow-hover"></i></a>
+                                <ul id="pricing" class="iq-submenu collapse" data-parent="#extra-pages">
+                                    <li class="{{#compare active '==' 'pricing'}}active{{ else }} {{/compare}}"><a
+                                            href="{{path}}backend/pricing.html"><i class="las la-weight"></i>pricing 1</a></li>
+                                    <li class="{{#compare active '==' 'pricing-1'}}active{{ else }} {{/compare}}"><a
+                                            href="{{path}}backend/pricing-1.html"><i class="las la-crutch"></i>pricing 2</a></li>
+                                    <li class="{{#compare active '==' 'pricing-2'}}active{{ else }} {{/compare}}"><a
+                                            href="{{path}}backend/pricing-2.html"><i class="las la-tablets"></i>pricing 3</a></li>
+                                    <li class="{{#compare active '==' 'pricing-3'}}active{{ else }} {{/compare}}"><a
+                                            href="{{path}}backend/pricing-3.html"><i class="las la-dna"></i>pricing 4</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#error" class="collapsed" data-toggle="collapse"
+                                    aria-expanded="false"><i class="las la-exclamation-triangle"></i><span>Error
+                                        Pages</span><i class="las la-plus iq-arrow-right arrow-active"></i><i
+                                        class="las la-minus iq-arrow-right arrow-hover"></i></a>
+                                <ul id="error" class="iq-submenu collapse" data-parent="#extra-pages">
+                                    <li class="{{#compare active '==' 'pages-error'}}active{{ else }} {{/compare}}"><a
+                                            href="{{path}}backend/pages-error.html"><i class="las la-exclamation-circle"></i>Error
+                                            404</a></li>
+                                    <li class="{{#compare active '==' 'pages-error-500'}}active{{ else }} {{/compare}}">
+                                        <a href="{{path}}backend/pages-error-500.html"><i class="las la-bug"></i>Error 500</a></li>
+                                </ul>
+                            </li>
+                            <li class="{{#compare active '==' 'invoice'}}active{{ else }} {{/compare}}"><a
+                                    href="{{path}}backend/invoice.html"><i class="las la-file-invoice"></i>Invoice </a></li>
+                                <li class="{{#compare active '==' 'invoice'}}active{{ else }} {{/compare}}"><a href="{{path}}backend/pages-subscribers.html"><i class="las la-sort"></i>subscribers </a></li>
+                            <li class="{{#compare active '==' 'pages-faq'}}active{{ else }} {{/compare}}"><a
+                                    href="{{path}}backend/pages-faq.html"><i class="las la-drafting-compass"></i>Faq</a></li>
+                            <li class="{{#compare active '==' 'blank-page'}}active{{ else }} {{/compare}}"><a
+                                    href="{{path}}backend/blank-page.html"><i class="las la-folder-open"></i>Blank Page</a></li>
+                            <li class="{{#compare active '==' 'pages-maintenance'}}active{{ else }} {{/compare}}"><a
+                                    href="{{path}}backend/pages-maintenance.html"><i class="las la-cogs"></i>Maintenance</a></li>
+                            <li class="{{#compare active '==' 'pages-comingsoon'}}active{{ else }} {{/compare}}"><a
+                                    href="{{path}}backend/pages-comingsoon.html"><i class="lab la-cc-mastercard"></i>Coming Soon</a>
+                            </li>
+                        </ul>
+                    </li>
+                    {{/outArray}}
+                </ul>
+            </nav>
+            <div class="p-3"></div>
+        </div>
+    </div>

@@ -1,0 +1,462 @@
+
+{{#extend 'layouts/backend/layout-6' title="layout-6" active="layout-6" path="../" }}
+{{#content "content"}}
+    <div class="container-fluid r-banner-cap">
+        <div class="row">
+            <div class="col-xl-3 col-lg-6 col-md-6">
+                <div class="card card-block card-stretch card-height r-odr-block"> 
+                    <div class="d-flex align-items-center justify-content-between p-20">
+                        <div class="text-warning">
+                            <i class="fas fa-utensils resto-img"></i>
+                        </div>                                    
+                        <div class="iq-card-text">
+                            <h2 class="mb-0 line-height">25 K</h2>                                
+                            <p class="mb-0">Order Served</p>
+                        </div>                     
+                        <div>
+                            <span class="badge badge-success cust-badge">75% <i class="fas fa-angle-up ml-1"></i></span>
+                        </div>
+                    </div>                                       
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-6 col-md-6">
+                <div class="card card-block card-stretch card-height r-odr-block success">
+                    <div class="d-flex align-items-center justify-content-between p-20">
+                        <div class="text-success">
+                            <i class="fas fa-users resto-img"></i>
+                        </div>
+                        <div class="iq-card-text">
+                            <h2 class="mb-0 line-height">15 K</h2>
+                            <p class="mb-0">Daily User's</p>
+                        </div>
+                        <div>
+                            <span class="badge badge-success cust-badge">53% <i class="fas fa-angle-up ml-1"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-6 col-md-6">
+                <div class="card card-block card-stretch card-height r-odr-block info">
+                    <div class="d-flex align-items-center justify-content-between p-20">
+                        <div class="text-info">
+                            <i class="fas fa-coins resto-img"></i>
+                        </div>
+                        <div class="iq-card-text">
+                            <h2 class="mb-0 line-height">40 K</h2>
+                            <p class="mb-0">Total Earning</p>
+                        </div>
+                        <div>
+                            <span class="badge badge-danger cust-badge">25% <i class="fas fa-angle-down ml-1"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-6 col-md-6 ">
+                <div class="card card-block card-stretch card-height r-odr-block danger">
+                    <div class="d-flex align-items-center justify-content-between p-20">
+                        <div class="text-danger">
+                            <i class="fas fa-comment-alt resto-img"></i>
+                        </div>
+                        <div class="iq-card-text">
+                            <h2 class="mb-0 line-height">258</h2>
+                            <p class="mb-0">New Feedback</p>
+                        </div>
+                        <div>
+                            <span class="badge badge-danger cust-badge">20% <i class="fas fa-angle-down ml-1"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="card card-block card-stretch card-height">
+                    <div class="card-header d-flex justify-content-between">
+                        <div class="header-title">
+                            <h4 class="card-title">Trending Order's</h4>
+                        </div>
+                        <div id="trending-order-slick-arrow" class="slick-aerrow-block">
+
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="trending-order">
+                            <div class="item">
+                                <img src="{{path}}assets/images/layouts/layout-6/or-1.png"
+                                    class="img-fluid rounded-circle avatar-120 odr-img" alt="image">
+                                <div class="odr-content bg-danger-light">
+                                    <span class="badge badge-white text-center"><i
+                                            class="fas fa-heart text-danger"></i></span>
+                                    <h5 class="mb-1">Mix Sushi Rice</h5>
+                                    <h5><strong>$25.25</strong></h5>
+                                    <p class="mb-0">order: 85</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="{{path}}assets/images/layouts/layout-6/or-2.png"
+                                    class="img-fluid rounded-circle avatar-120 odr-img" alt="image">
+                                <div class="odr-content bg-success-light">
+                                    <span class="badge badge-white text-center"><i
+                                            class="fas fa-heart text-danger"></i></span>
+                                    <h5 class="mb-1">Tropical Fruits</h5>
+                                    <h5><strong>$36.25</strong></h5>
+                                    <p class="mb-0">order: 70</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="{{path}}assets/images/layouts/layout-6/or-3.png"
+                                    class="img-fluid rounded-circle avatar-120 odr-img" alt="image">
+                                <div class="odr-content bg-danger-light">
+                                    <span class="badge badge-white text-center"><i
+                                            class="fas fa-heart text-danger"></i></span>
+                                    <h5 class="mb-1">Veg Fried Rice</h5>
+                                    <h5><strong>$15.25</strong></h5>
+                                    <p class="mb-0">order: 55</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="{{path}}assets/images/layouts/layout-6/or-1.png" class="img-fluid rounded-circle avatar-120 odr-img" alt="image">
+                                <div class="odr-content bg-danger-light">
+                                    <span class="badge badge-white text-center"><i class="fas fa-heart text-danger"></i></span>
+                                    <h5 class="mb-1">Mix Sushi Rice</h5>
+                                    <h5 class="mb-1"><strong>$25.25</strong></h5>
+                                    <p class="mb-0">order: 85</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="card card-transparent">
+                    <div class="resto-blog">
+                        <div class="item">
+                            <img src="{{path}}assets/images/layouts/layout-6/blog-1.jpg" class="rounded img-fluid w-100" alt="image">
+                            <div class="r-blog-content">                           
+                                <h4 class="mb-1">Green Curry</h4>
+                                <div class="d-flex justify-content-left mb-1">
+                                    <a href="#"><i class="las la-star text-warning"></i></a>
+                                    <a href="#"><i class="las la-star text-warning"></i></a>
+                                    <a href="#"><i class="las la-star text-warning"></i></a>
+                                    <a href="#"><i class="las la-star text-warning"></i></a>
+                                    <a href="#"><i class="las la-star text-light"></i></a>
+                                </div>
+                                <p class="body-text font-weight-bold mb-1"><i class="las la-map-marker-alt mr-1"></i> 8517 West Norcross, GA 30092</p>
+                                <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="{{path}}assets/images/layouts/layout-6/blog-2.jpg" class="rounded img-fluid w-100" alt="image">
+                            <div class="r-blog-content">
+                                <h4 class="mb-1">Pancake World</h4>
+                                <div class="d-flex justify-content-left mb-1">
+                                    <a href="#"><i class="las la-star text-warning"></i></a>
+                                    <a href="#"><i class="las la-star text-warning"></i></a>
+                                    <a href="#"><i class="las la-star text-warning"></i></a>
+                                    <a href="#"><i class="las la-star text-warning"></i></a>
+                                    <a href="#"><i class="las la-star text-light"></i></a>
+                                </div>
+                                <p class="body-text font-weight-bold mb-1"><i class="las la-map-marker-alt mr-1"></i> 8517 West Norcross, GA
+                                    30092</p>
+                                <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="{{path}}assets/images/layouts/layout-6/blog-3.jpg" class="rounded img-fluid w-100" alt="image">
+                            <div class="r-blog-content">
+                                <h4 class="mb-1">Green Curry</h4>
+                                <div class="d-flex justify-content-left mb-1">
+                                    <a href="#"><i class="las la-star text-warning"></i></a>
+                                    <a href="#"><i class="las la-star text-warning"></i></a>
+                                    <a href="#"><i class="las la-star text-warning"></i></a>
+                                    <a href="#"><i class="las la-star text-warning"></i></a>
+                                    <a href="#"><i class="las la-star text-light"></i></a>
+                                </div>
+                                <p class="body-text font-weight-bold mb-1"><i class="las la-map-marker-alt mr-1"></i> 8517 West Norcross, GA
+                                    30092</p>
+                                <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>           
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="card card-block card-stretch card-height">
+                    <div class="card-header d-flex justify-content-between">
+                        <div class="header-title">
+                            <h4 class="card-title">Overview</h4>
+                        </div>
+                        <div class="card-header-toolbar d-flex align-items-center">
+                            <div class="dropdown">
+                                <span class="dropdown-toggle dropdown-bg bg-warning p-2" id="dropdownMenuButton7"
+                                    data-toggle="dropdown" aria-expanded="false" role="button">
+                                    Monthly<i class="ri-arrow-down-s-line ml-1"></i>
+                                </span>
+                                <div class="dropdown-menu dropdown-menu-right shadow-none"
+                                    aria-labelledby="dropdownMenuButton7">
+                                    <a class="dropdown-item" href="#"><i class="ri-eye-fill mr-2"></i>View</a>
+                                    <a class="dropdown-item" href="#"><i class="ri-delete-bin-6-fill mr-2"></i>Delete</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body pb-0">
+                        <div id="resto-chart-03"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="card card-block card-stretch card-height">
+                    <div class="card-header position-relative d-flex justify-content-between">
+                        <div class="header-title">
+                            <h4 class="card-title">Rating</h4>
+                        </div>
+                        <div class="rate-like">
+                            <i class="fas fa-star mb-1"></i>
+                            <p class="mb-0">4.5/5</p>
+                        </div>
+                    </div>
+                    <div class="card-body r-lke-tab">
+                        <ul class="nav nav-tabs" id="myTab-1" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#like" role="tab"
+                                    aria-controls="like" aria-selected="true">Customer Like</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#dislike" role="tab"
+                                    aria-controls="dislike" aria-selected="false">Customer Dislike</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent-2">
+                            <div class="tab-pane fade show active" id="like" role="tabpanel">
+                                <div class="mb-3 mt-4">
+                                    <p class="d-avail-text mb-1"><i class="fas fa-circle text-primary mr-1"></i> Service</p>
+                                    <div class="iq-progress-bar-linear d-inline-block iq-progress-height mt-1 w-80">
+                                        <div class="iq-progress-bar">
+                                            <span class="bg-primary" data-percent="85"></span>
+                                        </div>
+                                    </div>
+                                    <div class="percentage float-right font-weight-bold">80 <span>%</span></div>
+                                </div>
+                                <div class="mb-3">
+                                    <p class="d-avail-text mb-1"><i class="fas fa-circle text-warning mr-1"></i> Food</p>
+                                    <div class="iq-progress-bar-linear d-inline-block iq-progress-height mt-1 w-80">
+                                        <div class="iq-progress-bar">
+                                            <span class="bg-warning" data-percent="60"></span>
+                                        </div>
+                                    </div>
+                                    <div class="percentage float-right font-weight-bold">60 <span>%</span></div>
+                                </div>
+                                <div class="mb-3">
+                                    <p class="d-avail-text mb-1"><i class="fas fa-circle text-success mr-1"></i> Cleanliness
+                                    </p>
+                                    <div class="iq-progress-bar-linear d-inline-block iq-progress-height mt-1 w-80">
+                                        <div class="iq-progress-bar">
+                                            <span class="bg-success" data-percent="75"></span>
+                                        </div>
+                                    </div>
+                                    <div class="percentage float-right font-weight-bold">75 <span>%</span></div>
+                                </div>
+                                <div>
+                                    <p class="d-avail-text mb-1"><i class="fas fa-circle text-info mr-1"></i> Behaviour</p>
+                                    <div class="iq-progress-bar-linear d-inline-block iq-progress-height mt-1 w-80">
+                                        <div class="iq-progress-bar">
+                                            <span class="bg-info" data-percent="70"></span>
+                                        </div>
+                                    </div>
+                                    <div class="percentage float-right font-weight-bold">70 <span>%</span></div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="dislike" role="tabpanel">
+                                <div class="mb-3 mt-4">
+                                    <p class="d-avail-text mb-1"><i class="fas fa-circle text-primary mr-1"></i> Service</p>
+                                    <div class="iq-progress-bar-linear d-inline-block iq-progress-height mt-1 w-80">
+                                        <div class="iq-progress-bar">
+                                            <span class="bg-primary" data-percent="50"></span>
+                                        </div>
+                                    </div>
+                                    <div class="percentage float-right font-weight-bold">50 <span>%</span></div>
+                                </div>
+                                <div class="mb-3">
+                                    <p class="d-avail-text mb-1"><i class="fas fa-circle text-warning mr-1"></i> Food</p>
+                                    <div class="iq-progress-bar-linear d-inline-block iq-progress-height mt-1 w-80">
+                                        <div class="iq-progress-bar">
+                                            <span class="bg-warning" data-percent="35"></span>
+                                        </div>
+                                    </div>
+                                    <div class="percentage float-right font-weight-bold">35 <span>%</span></div>
+                                </div>
+                                <div class="mb-3">
+                                    <p class="d-avail-text mb-1"><i class="fas fa-circle text-success mr-1"></i> Cleanliness
+                                    </p>
+                                    <div class="iq-progress-bar-linear d-inline-block iq-progress-height mt-1 w-80">
+                                        <div class="iq-progress-bar">
+                                            <span class="bg-success" data-percent="28"></span>
+                                        </div>
+                                    </div>
+                                    <div class="percentage float-right font-weight-bold">28 <span>%</span></div>
+                                </div>
+                                <div>
+                                    <p class="d-avail-text mb-1"><i class="fas fa-circle text-info mr-1"></i> Behaviour</p>
+                                    <div class="iq-progress-bar-linear d-inline-block iq-progress-height mt-1 w-80">
+                                        <div class="iq-progress-bar">
+                                            <span class="bg-info" data-percent="70"></span>
+                                        </div>
+                                    </div>
+                                    <div class="percentage float-right font-weight-bold">45 <span>%</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card card-block card-stretch card-height">
+                    <div class="card-header d-flex justify-content-between">
+                        <div class="header-title">
+                            <h4 class="card-title">Order List</h4>
+                        </div>
+                        <div class="card-header-toolbar d-flex align-items-center">
+                            <button class="btn btn-warning">View All</button>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table mb-0 table-borderless data-table">
+                                <thead class="order-resto">
+                                    <tr>
+                                        <th>Order ID</th>
+                                        <th>Order Name</th>
+                                        <th>Customer Name</th>
+                                        <th>Date & Time</th>
+                                        <th>Amount</th>
+                                        <th>Ph No.</th>
+                                        <th>Quantity</th>
+                                        <th>Location</th>
+                                        <th>Status</th>
+                                        <th scope="col">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="odr-tble">
+                                    <tr>
+                                        <td>
+                                            #12345
+                                        </td>
+                                        <td>Lorem Ipsum Idor
+                                        </td>
+                                        <td>
+                                            Mario Speedwagon
+                                        </td>
+                                        <td>
+                                            09/09/2020 , 09:30
+                                        </td>
+                                        <td>
+                                            $85
+                                        </td>
+                                        <td>
+                                            + 114 12345 67891
+                                        </td>
+                                        <td>
+                                            05
+                                        </td>
+                                        <td>
+                                            Canada
+                                        </td>
+                                        <td>
+                                            <span class="badge badge-success">Paid</span>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex align-items-center list-action">
+                                                <a class="badge bg-success-light mr-2" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"
+                                                    href="#"><i class="ri-pencil-line"></i></a>
+                                                <a class="badge bg-danger-light" data-toggle="tooltip" data-placement="top" title=""
+                                                    data-original-title="Delete" href="#"><i class="ri-delete-bin-line"></i></a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            #56565
+                                        </td>
+                                        <td>Lorem Ipsum Idor
+                                        </td>
+                                        <td>
+                                            Petey Cruiser
+                                        </td>
+                                        <td>
+                                            08/09/2020 , 11:30
+                                        </td>
+                                        <td>
+                                            $21
+                                        </td>
+                                        <td>
+                                            + 114 12345 67891
+                                        </td>
+                                        <td>
+                                            15
+                                        </td>
+                                        <td>
+                                            England
+                                        </td>
+                                        <td>
+                                            <span class="badge badge-danger">Pending</span>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex align-items-center list-action">
+                                                <a class="badge bg-success-light mr-2" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"
+                                                    href="#"><i class="ri-pencil-line"></i></a>
+                                                <a class="badge bg-danger-light" data-toggle="tooltip" data-placement="top" title=""
+                                                    data-original-title="Delete" href="#"><i class="ri-delete-bin-line"></i></a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            #766768
+                                        </td>
+                                        <td>Lorem Ipsum Idor
+                                        </td>
+                                        <td>
+                                            Anna Sthesia
+                                        </td>
+                                        <td>
+                                            05/09/2020 , 07:30
+                                        </td>
+                                        <td>
+                                            $65
+                                        </td>
+                                        <td>
+                                            + 114 12345 67891
+                                        </td>
+                                        <td>
+                                            08
+                                        </td>
+                                        <td>
+                                            London
+                                        </td>
+                                        <td>
+                                            <span class="badge badge-success">Paid</span>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex align-items-center list-action">
+                                                <a class="badge bg-success-light mr-2" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"
+                                                    href="#"><i class="ri-pencil-line"></i></a>
+                                                <a class="badge bg-danger-light" data-toggle="tooltip" data-placement="top" title=""
+                                                    data-original-title="Delete" href="#"><i class="ri-delete-bin-line"></i></a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{{/content}}
+{{/extend}}

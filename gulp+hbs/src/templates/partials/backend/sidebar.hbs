@@ -1,0 +1,63 @@
+
+<div class="iq-sidebar {{#if sidebarStyle}} {{ sidebarStyle }} {{else}} sidebar-default {{/if}}">
+    <div class="iq-sidebar-logo d-flex align-items-center justify-content-between">
+        <a href="index.html" class="header-logo">
+            {{#compare logoName '!==' ''}}
+            <img src="{{path}}assets/images/{{logoName}}" class="img-fluid rounded-normal" alt="logo">
+            {{else}}
+            <img src="{{path}}assets/images/logo.png" class="img-fluid rounded-normal" alt="logo">
+            {{/compare}}
+        </a>
+        <div class="iq-menu-bt-sidebar">
+            <i class="las la-bars wrapper-menu"></i>
+        </div>
+    </div>
+    <div class="data-scrollbar" data-scroll="1">
+        <nav class="iq-sidebar-menu">
+            <ul id="iq-sidebar-toggle" class="iq-menu">
+                {{#sidebarList}}
+                 <li class="{{#compare ../active "==" name }}active{{ else }} {{/compare}}">
+                    {{#if children}}
+                    <a href="{{href}}" class="collapsed" data-toggle="collapse" aria-expanded="false">
+                        <i class="{{icon_class}}"></i><span>{{title}}</span>
+                        <i class="{{collapse_icon_class}}"></i>
+                        <i class="{{expanded_icon_class}}"></i>
+                    </a>
+                    {{else}}
+                        <a href="../{{href}}.html" class="">
+                            <i class="{{icon_class}}"></i><span>{{title}}</span>
+                        </a>
+                    {{/if}}
+                    <ul id="{{name}}" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
+                        {{#children}}
+                            <li class="{{#compare ../../active "==" name }}active{{ else }} {{/compare}}">
+                            {{#if children}}
+                                <a href="{{href}}" class="collapsed" data-toggle="collapse" aria-expanded="false">
+                                    <i class="{{icon_class}}"></i><span>{{title}}</span>
+                                    <i class="{{collapse_icon_class}}"></i>
+                                    <i class="{{expanded_icon_class}}"></i>
+                                </a>
+                                <ul id="{{name}}" class="iq-submenu collapse" data-parent="#{{../name}}">
+                                    {{#children}}
+                                        <li class="{{#compare ../../../active "==" name }}active{{ else }} {{/compare}}">
+                                            <a href="../{{href}}.html">
+                                                <i class="{{icon_class}}"></i><span>{{title}}</span>
+                                            </a>
+                                        </li>
+                                    {{/children}}
+                                </ul>
+                            {{else}}
+                                    <a href="../{{href}}.html">
+                                        <i class="{{icon_class}}"></i><span>{{title}}</span>
+                                    </a>
+                            {{/if}}
+                            </li>
+                        {{/children}}
+                    </ul>
+                 </li>
+                {{/sidebarList}}
+            </ul>
+        </nav>
+        <div class="p-3"></div>
+    </div>
+    </div>

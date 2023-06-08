@@ -1,0 +1,38 @@
+{{!-- layouts/base.hbs --}}
+
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>{{ appName }} | Responsive Bootstrap 4 Admin Dashboard Template
+    </title>
+    {{> partials/backend/head }}
+    {{#block "head"}}
+    {{!-- External page head section--}}
+    {{/block}}
+</head>
+
+<body class="hospi-wrapper {{bodyClass}} {{#compare dark '===' 'true'}} dark {{/compare}}">
+    <!-- loader Start -->
+    <div id="loading">
+        {{> partials/backend/loader }}
+    </div>
+    <!-- loader END -->
+    <!-- Wrapper Start -->
+    <div class="wrapper bg-h-full l-horizontal overflow-hidden">
+        {{> partials/backend/header-layout-11 }}
+        <div class="content-page hospi-content">
+            {{#block "content"}}
+            {{/block}}
+        </div>
+    </div>
+    <!-- Wrapper End-->
+    {{> partials/backend/footer }}
+    {{> partials/backend/scripts }}
+    {{#block "scripts"}}
+    {{/block}}
+</body>
+
+</html>

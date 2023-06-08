@@ -1,0 +1,10 @@
+'use strict';
+require('./hbs-helpers');
+require('./clean');
+require('./html');
+require('./style');
+require('./script');
+require('./images-tasks');
+require('./vendor-tasks');
+require('./build');
+require('./watch');

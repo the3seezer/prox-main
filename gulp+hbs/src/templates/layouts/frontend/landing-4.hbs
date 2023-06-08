@@ -1,0 +1,47 @@
+{{!-- layouts/base.hbs --}}
+
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>{{ appName }} | Responsive Bootstrap 4 Template</title>
+    {{> partials/frontend/head }}
+    {{#block "head"}}
+    {{!-- External page head section--}}
+    {{/block}}
+</head>
+
+<body class="landing-creative {{bodyClass}}">
+    <!-- loader Start -->
+    <div id="loading">
+        <div id="loading-center">
+        </div>
+    </div>
+    <!-- loader END -->
+    {{#block "header"}}
+    {{> partials/frontend/header-landing-4 }}
+    {{/block}}
+
+    {{#block "slider"}}
+    
+    {{/block}}
+
+    <div class="wrapper">
+        {{#block "content"}}
+
+        {{/block}}
+    </div>
+
+    {{#block "footer"}}
+    {{> partials/frontend/footer-landing-4 }}
+    {{/block}}
+
+    {{> partials/frontend/scripts }}
+
+    {{#block "scripts"}}
+    {{/block}}
+</body>
+
+</html>

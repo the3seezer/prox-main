@@ -1,0 +1,518 @@
+
+{{#extend layout app="true" title="server-monitiring" active="server-monitoring" path="../" }}
+    {{#content "content"}}
+      <div class="container-fluid">
+         <div class="row content-body">
+            <div class="col-lg-12">
+               <div class="navbar-breadcrumb mb-4">
+                  <h4 class="mb-1">Dashboard</h4>
+                  <p class="mb-0"><span class="text-danger">Hi there,</span> Great to see you again</p>
+               </div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3">
+               <div class="card card-block card-stretch card-height">
+                  <div class="card-body iq-box-relative">
+                     <div class="iq-service d-flex align-items-center justify-content-between">
+                        <div class="service-data">
+                           <h2>24%</h2>
+                           <p class="mb-0">Service used</p>
+                        </div>
+                        <div id="service-chart-01" class="service-chart"></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3">
+               <div class="card card-block card-stretch card-height">
+                  <div class="card-body iq-box-relative">
+                     <div class="iq-service d-flex align-items-center justify-content-between">
+                        <div class="service-data">
+                           <h2>2.5</h2>
+                           <p class="mb-0">GB Stored</p>
+                        </div>
+                        <div id="service-chart-02" class="service-chart"></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3">
+               <div class="card card-block card-stretch card-height bg-danger">
+                  <div class="card-body iq-box-relative">
+                     <div class="iq-service d-flex align-items-center justify-content-between">
+                        <div class="service-data">
+                           <h2 class="text-white">351</h2>
+                           <p class="mb-0">User Collected</p>
+                        </div>
+                        <div id="service-chart-05" class="service-chart"></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3">
+               <div class="card card-block card-stretch card-height">
+                  <div class="card-body iq-box-relative">
+                     <div class="iq-service d-flex align-items-center justify-content-between">
+                        <div class="service-data">
+                           <h2>485</h2>
+                           <p class="mb-0">Visitors</p>
+                        </div>
+                        <div id="service-chart-04" class="service-chart"></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-7">
+               <div class="card card-block card-stretch card-height">
+                  <div class="card-header d-flex justify-content-between">
+                     <div class="header-title">
+                        <h4 class="card-title">Response Graph</h4>
+                     </div>
+                     <div class="mt-1">
+                        <div class="d-flex align-items-center justify-content-between">
+                           <a href="javascript:void(0);" class="d-flex align-items-center mr-4">
+                              <span class="bg-danger p-1 rounded mr-2 xs-none"></span>
+                              <p class="text-danger mb-0 xs-none">Response Time</p>
+                           </a>
+                           <div class="card-header-toolbar d-flex align-items-center">
+                              <div class="dropdown">
+                                 <span class="dropdown-toggle dropdown-bg bg-primary p-2" id="dropdownMenuButton1" data-toggle="dropdown">
+                                 7 Days<i class="ri-arrow-down-s-line ml-1"></i>
+                                 </span>
+                                 <div class="dropdown-menu dropdown-menu-right shadow-none" aria-labelledby="dropdownMenuButton1">
+                                    <a class="dropdown-item" href="#"><i class="ri-eye-fill mr-2"></i>View</a>
+                                    <a class="dropdown-item" href="#"><i class="ri-delete-bin-6-fill mr-2"></i>Delete</a>
+                                    <a class="dropdown-item" href="#"><i class="ri-pencil-fill mr-2"></i>Edit</a>
+                                    <a class="dropdown-item" href="#"><i class="ri-printer-fill mr-2"></i>Print</a>
+                                    <a class="dropdown-item" href="#"><i class="ri-file-download-fill mr-2"></i>Download</a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="card-body">
+                     <div id="activies-chart-01"></div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-5">
+               <div class="card card-block card-stretch card-height">
+                  <div class="card-body c-line">
+                     <div class="d-flex justify-content-between align-items-center">
+                        <div class="icon icon-width avatar-70 bg-danger border border-danger-light rounded-circle text-center">
+                           <i class="ri-alert-line"></i>
+                        </div>
+                        <div class="right-detail text-right">
+                           <p class="mb-0">Total Traffic</p>
+                           <h3>136.486<span class="font-size-12">TPS</span></h3>
+                        </div>
+                     </div>
+                     <ul class="list-inline p-0 mt-4">
+                        <li class="mb-3">
+                           <div class="d-flex flex-wrap justify-content-between align-items-center">
+                              <h5>perfBenchmark_invalid_v1</h5>
+                              <div class="btn bg-danger-light rounded-normal">48.428</div>
+                           </div>
+                           <p class="mb-0">us-west-2</p>
+                        </li>
+                        <li class="mb-3">
+                           <div class="d-flex flex-wrap justify-content-between align-items-center">
+                              <h5>perfBenchmark_invalid_v1</h5>
+                              <div class="btn bg-success-light rounded-normal">45.467</div>
+                           </div>
+                           <p class="mb-0">us-west-2</p>
+                        </li>
+                     </ul>
+                     <a href="#" class="d-block text-center mt-4 text-black font-weight-500">View all<i class="ri-arrow-down-s-line"></i></a>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-5">
+               <div class="card card-block card-stretch card-height bg-danger">
+                  <div class="card-body c-line">
+                     <div class="d-flex justify-content-between align-items-center">
+                        <div class="icon icon-width avatar-70 bg-white text-danger border border-danger-light rounded-circle text-center">
+                           <i class="ri-alert-line"></i>
+                        </div>
+                        <div class="right-detail text-right">
+                           <p class="mb-0">Error Rate</p>
+                           <h3 class="text-white">54.754<span class="font-size-12">%</span></h3>
+                        </div>
+                     </div>
+                     <ul class="list-inline p-0 mt-5">
+                        <li class="mb-3">
+                           <div class="d-flex flex-wrap justify-content-between align-items-center">
+                              <h5 class="text-white">perfBenchmark_invalid_v1</h5>
+                              <div class="btn bg-white">45.365</div>
+                           </div>
+                           <p class="mb-0">us-west-2</p>
+                        </li>
+                        <li class="mb-3">
+                           <div class="d-flex flex-wrap justify-content-between align-items-center">
+                              <h5 class="text-white">perfBenchmark_invalid_v1</h5>
+                              <div class="btn bg-danger-light">20.458</div>
+                           </div>
+                           <p class="mb-0">us-west-2</p>
+                        </li>
+                     </ul>
+                     <a href="#" class="d-block text-center mt-4 text-white font-weight-500">View all<i class="ri-arrow-down-s-line"></i></a>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-7">
+               <div class="card card-block card-stretch card-height">
+                  <div class="card-header d-flex justify-content-between">
+                     <div class="header-title">
+                        <h4 class="card-title">Project Tests</h4>
+                     </div>
+                     <div class="card-header-toolbar d-flex align-items-center">
+                        <div class="dropdown">
+                           <span class="dropdown-toggle dropdown-bg bg-primary p-2" id="dropdownMenuButton2" data-toggle="dropdown">
+                           Order by Creation<i class="ri-arrow-down-s-line ml-1"></i>
+                           </span>
+                           <div class="dropdown-menu dropdown-menu-right shadow-none" aria-labelledby="dropdownMenuButton2">
+                              <a class="dropdown-item" href="#"><i class="ri-eye-fill mr-2"></i>View</a>
+                              <a class="dropdown-item" href="#"><i class="ri-delete-bin-6-fill mr-2"></i>Delete</a>
+                              <a class="dropdown-item" href="#"><i class="ri-pencil-fill mr-2"></i>Edit</a>
+                              <a class="dropdown-item" href="#"><i class="ri-printer-fill mr-2"></i>Print</a>
+                              <a class="dropdown-item" href="#"><i class="ri-file-download-fill mr-2"></i>Download</a>
+                           </div>
+                           <span class="dropdown-toggle dropdown-bg bg-primary ml-4 p-2 xs-none" id="dropdownMenuButton3" data-toggle="dropdown">
+                           Sort by Name<i class="ri-arrow-down-s-line ml-1"></i>
+                           </span>
+                           <div class="dropdown-menu dropdown-menu-right shadow-none" aria-labelledby="dropdownMenuButton3">
+                              <a class="dropdown-item" href="#"><i class="ri-eye-fill mr-2"></i>View</a>
+                              <a class="dropdown-item" href="#"><i class="ri-delete-bin-6-fill mr-2"></i>Delete</a>
+                              <a class="dropdown-item" href="#"><i class="ri-pencil-fill mr-2"></i>Edit</a>
+                              <a class="dropdown-item" href="#"><i class="ri-printer-fill mr-2"></i>Print</a>
+                              <a class="dropdown-item" href="#"><i class="ri-file-download-fill mr-2"></i>Download</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="card-body">
+                     <div class="table-responsive">
+                        <table class="table mb-0 mt-2 table-borderless table-test">
+                           <tbody>
+                              <tr>
+                                 <td>
+                                    <h6>Retail Int</h6>
+                                    <p class="mb-0">Author: Jason...</p>
+                                 </td>
+                                 <td>
+                                    <p class="mb-0">2018/03/29 @07:25</p>
+                                    <span class="text-primary">Last Modified</span>
+                                 </td>
+                                 <td class="text-right">
+                                    <div class="text-danger"><i class="ri-alert-fill"></i></div>
+                                    <span class="text-danger">Test Incomplete</span>
+                                 </td>
+                                 <td class="float-right">
+                                    <div class="d-flex align-items-center text-right">
+                                       <a href="javascript:void(0);" class="avatar-45 text-center ml-3 rounded bg-danger-light font-size-18"><i class="ri-pencil-fill"></i></a>
+                                       <a href="javascript:void(0);" class="avatar-45 rounded text-center ml-3 bg-primary-light font-size-18"><i class="ri-calendar-2-fill text-primary"></i></a>
+                                       <a href="javascript:void(0);" class="avatar-45 rounded text-center ml-3 bg-success-light font-size-18"><i class="ri-play-fill"></i></a>
+                                    </div>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td>
+                                    <h6>Retail Int</h6>
+                                    <p class="mb-0">Author: Jason...</p>
+                                 </td>
+                                 <td>
+                                    <p class="mb-0">2018/03/29 @07:25</p>
+                                    <span class="text-primary">Last Modified</span>
+                                 </td>
+                                 <td class="text-right">
+                                    <div class="text-success">0/3</div>
+                                    <p class="mb-0">Active Runs</p>
+                                 </td>
+                                 <td class="float-right">
+                                    <div class="d-flex align-items-center text-right">
+                                       <a href="javascript:void(0);" class="avatar-45 text-center ml-3 rounded bg-danger-light font-size-18"><i class="ri-pencil-fill"></i></a>
+                                       <a href="javascript:void(0);" class="avatar-45 rounded text-center ml-3 bg-primary-light font-size-18"><i class="ri-calendar-2-fill text-primary"></i></a>
+                                       <a href="javascript:void(0);" class="avatar-45 rounded text-center ml-3 bg-success-light font-size-18"><i class="ri-play-fill"></i></a>
+                                    </div>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td>
+                                    <h6>Retail Int</h6>
+                                    <p class="mb-0">Author: Jason...</p>
+                                 </td>
+                                 <td>
+                                    <p class="mb-0">2018/03/29 @07:25</p>
+                                    <span class="text-primary">Last Modified</span>
+                                 </td>
+                                 <td class="text-right">
+                                    <div class="text-success">2/3</div>
+                                    <p class="mb-0">Active Runs</p>
+                                 </td>
+                                 <td class="float-right">
+                                    <div class="d-flex align-items-center text-right">
+                                       <a href="javascript:void(0);" class="avatar-45 text-center ml-3 rounded bg-danger-light font-size-18"><i class="ri-pencil-fill"></i></a>
+                                       <a href="javascript:void(0);" class="avatar-45 rounded text-center ml-3 bg-primary-light font-size-18"><i class="ri-calendar-2-fill text-primary"></i></a>
+                                       <a href="javascript:void(0);" class="avatar-45 rounded text-center ml-3 bg-success-light font-size-18"><i class="ri-play-fill"></i></a>
+                                    </div>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <a href="#" class="d-block text-center text-black font-weight-500">View all<i class="ri-arrow-down-s-line"></i></a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-8">
+               <div class="card card-block card-stretch card-height">
+                  <div class="card-header d-flex justify-content-between data-center-xs">
+                     <div class="header-title">
+                        <h4 class="card-title">Activites</h4>
+                     </div>
+                     <div class="mt-1">
+                        <div class="d-flex align-items-center justify-content-between">
+                           <label class="mb-0 mr-2">Data Type: </label>
+                           <div class="custom-control custom-checkbox custom-checkbox-color-check custom-control-inline">
+                              <input type="checkbox" class="custom-control-input bg-primary" id="customCheck-1" checked="">
+                              <label class="custom-control-label" for="customCheck-1"> Operations</label>
+                           </div>
+                           <div class="custom-control custom-checkbox custom-checkbox-color-check custom-control-inline">
+                              <input type="checkbox" class="custom-control-input bg-success" id="customCheck-2" checked="">
+                              <label class="custom-control-label" for="customCheck-2">API Calls</label>
+                           </div>
+                           <div class="custom-control custom-checkbox custom-checkbox-color-check custom-control-inline xs-check-none">
+                              <input type="checkbox" class="custom-control-input bg-danger" id="customCheck-3" checked="">
+                              <label class="custom-control-label" for="customCheck-3">Errors</label>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="card-body">
+                     <div id="activies-chart"></div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-4">
+               <div class="card card-block card-stretch card-height">
+                  <div class="card-header d-flex justify-content-between">
+                     <div class="header-title">
+                        <h4 class="card-title">Activities Percentage</h4>
+                     </div>
+                     <div class="card-header-toolbar d-flex align-items-center">
+                        <div class="dropdown">
+                           <span class="dropdown-toggle dropdown-bg bg-primary p-2" id="dropdownMenuButton4" data-toggle="dropdown">
+                           Week<i class="ri-arrow-down-s-line ml-1"></i>
+                           </span>
+                           <div class="dropdown-menu dropdown-menu-right shadow-none" aria-labelledby="dropdownMenuButton4">
+                              <a class="dropdown-item" href="#"><i class="ri-eye-fill mr-2"></i>View</a>
+                              <a class="dropdown-item" href="#"><i class="ri-delete-bin-6-fill mr-2"></i>Delete</a>
+                              <a class="dropdown-item" href="#"><i class="ri-pencil-fill mr-2"></i>Edit</a>
+                              <a class="dropdown-item" href="#"><i class="ri-printer-fill mr-2"></i>Print</a>
+                              <a class="dropdown-item" href="#"><i class="ri-file-download-fill mr-2"></i>Download</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="card-body">
+                     <div class="activities-content position-relative mt-5">
+                        <div class="avatar-235 activity activity-1 rounded-circle bg-danger text-center">
+                           <h2 class="text-white line-height-4">51%</h2>
+                           <p class="text-white mb-0 line-height-3">Increase</p>
+                        </div>
+                        <div class="avatar-155 decrease m-auto activity activity-2 rounded-circle bg-primary text-center">
+                           <h3 class="text-white line-height-4">31%</h3>
+                           <p class="text-white mb-0 line-height-3">Increase</p>
+                        </div>
+                        <div class="avatar-110 m-auto activity activity-3 rounded-circle bg-success text-center">
+                           <h3 class="text-white line-height-4">8%</h3>
+                           <p class="text-white mb-0 line-height-3">Decrease</p>
+                        </div>
+                     </div>
+                     <div class="d-flex justify-content-between mb-1 mt-5">
+                        <div class="text-center">
+                           <h3>251</h3>
+                           <p class="mb-0">Operations</p>
+                        </div>
+                        <div class="text-center">
+                           <h3>198</h3>
+                           <p class="mb-0">API Calls</p>
+                        </div>
+                        <div class="text-center">
+                           <h3>21</h3>
+                           <p class="mb-0">Errors</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-12">
+               <div class="card card-block card-stretch card-height">
+                  <div class="card-header d-flex justify-content-between">
+                     <div class="header-title">
+                        <h4 class="card-title">Acme API Monitors</h4>
+                     </div>
+                     <div class="card-header-toolbar d-flex align-items-center">
+                        <div class="dropdown">
+                           <span class="btn bg-primary">Add Monitor</span>                                 
+                        </div>
+                     </div>
+                  </div>
+                  <div class="card-body">
+                     <div class="table-responsive">
+                        <table class="table mb-0 mt-2 table-borderless table-test tbl-server-info">
+                           <thead>
+                              <tr class="text-center">
+                                 <th scope="col" class="text-left">Name</th>
+                                 <th scope="col">Status</th>
+                                 <th scope="col">Performance</th>
+                                 <th scope="col">Uptime 24 Hours</th>
+                                 <th scope="col">Last Run</th>
+                                 <th scope="col">Actions</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr>
+                                 <td>
+                                    <h6>Facebook/whitehouse</h6>
+                                    <div class="btn bg-primary-light mt-2">Sample</div>
+                                 </td>
+                                 <td class="text-center">
+                                    <div class="text-success font-size-24"><i class="ri-arrow-up-fill"></i></div>
+                                 </td>
+                                 <td class="text-center">
+                                    <div class="api-chart-01 d-inline-block"></div>
+                                    <span class="d-block mt-2 text-danger">81ms</span>
+                                 </td>
+                                 <td class="text-center">
+                                    <div class="apitime-chart-01 d-inline-block"></div>
+                                    <span class="d-block mt-2 text-primary">65%</span>
+                                 </td>
+                                 <td class="text-center">
+                                    <div class="text-black">2018/03/29 @07:25</div>
+                                 </td>
+                                 <td class="text-center m-auto">
+                                    <div class="d-flex align-items-center justify-content-center">
+                                       <a href="javascript:void(0);" class="avatar-45 text-center ml-3 rounded bg-danger-light font-size-18"><i class="ri-bar-chart-fill"></i></a>
+                                       <a href="javascript:void(0);" class="avatar-45 rounded text-center ml-3 bg-dark-light font-size-18"><i class="ri-delete-bin-7-fill"></i></a>
+                                    </div>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td>
+                                    <h6>Facebook/whitehouse</h6>
+                                 </td>
+                                 <td class="text-center">
+                                    <div class="text-danger font-size-24"><i class="ri-arrow-down-fill"></i></div>
+                                 </td>
+                                 <td class="text-center">
+                                    <div class="api-chart-02 d-inline-block"></div>
+                                    <span class="d-block mt-2 text-danger">81ms</span>
+                                 </td>
+                                 <td class="text-center">
+                                    <div class="apitime-chart-02 d-inline-block"></div>
+                                    <span class="d-block mt-2 text-primary">65%</span>
+                                 </td>
+                                 <td class="text-center">
+                                    <div class="text-black">2018/03/29 @07:25</div>
+                                 </td>
+                                 <td class="text-center m-auto">
+                                    <div class="d-flex align-items-center justify-content-center">
+                                       <a href="javascript:void(0);" class="avatar-45 text-center ml-3 rounded bg-primary-light font-size-18"><i class="ri-pencil-fill"></i></a>
+                                       <a href="javascript:void(0);" class="avatar-45 text-center ml-3 rounded bg-danger-light font-size-18"><i class="ri-bar-chart-fill"></i></a>
+                                       <a href="javascript:void(0);" class="avatar-45 rounded text-center ml-3 bg-dark-light font-size-18"><i class="ri-repeat-2-line"></i></a>
+                                       <a href="javascript:void(0);" class="avatar-45 rounded text-center ml-3 bg-success-light font-size-18"><i class="ri-pause-line"></i></a>
+                                    </div>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td>
+                                    <h6>Facebook/whitehouse</h6>
+                                 </td>
+                                 <td class="text-center">
+                                    <div class="text-success font-size-24"><i class="ri-arrow-up-fill"></i></div>
+                                 </td>
+                                 <td class="text-center">
+                                    <div class="api-chart-03 d-inline-block"></div>
+                                    <span class="d-block mt-2 text-danger">81ms</span>
+                                 </td>
+                                 <td class="text-center">
+                                    <div class="apitime-chart-03 d-inline-block"></div>
+                                    <span class="d-block mt-2 text-primary">65%</span>
+                                 </td>
+                                 <td class="text-center">
+                                    <div class="text-black">2018/03/29 @07:25</div>
+                                 </td>
+                                 <td class="text-center m-auto">
+                                    <div class="d-flex align-items-center justify-content-center">
+                                       <a href="javascript:void(0);" class="avatar-45 text-center ml-3 rounded bg-primary-light font-size-18"><i class="ri-pencil-fill"></i></a>
+                                       <a href="javascript:void(0);" class="avatar-45 text-center ml-3 rounded bg-danger-light font-size-18"><i class="ri-bar-chart-fill"></i></a>
+                                       <a href="javascript:void(0);" class="avatar-45 rounded text-center ml-3 bg-dark-light font-size-18"><i class="ri-repeat-2-line"></i></a>
+                                       <a href="javascript:void(0);" class="avatar-45 rounded text-center ml-3 bg-success-light font-size-18"><i class="ri-pause-line"></i></a>
+                                    </div>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td>
+                                    <h6>Facebook/whitehouse</h6>
+                                    <div class="btn bg-primary-light mt-2">Sample</div>
+                                 </td>
+                                 <td class="text-center">
+                                    <div class="text-danger font-size-24"><i class="ri-arrow-down-fill"></i></div>
+                                 </td>
+                                 <td class="text-center">
+                                    <div class="api-chart-04 d-inline-block"></div>
+                                    <span class="d-block mt-2 text-danger">81ms</span>
+                                 </td>
+                                 <td class="text-center">
+                                    <div class="apitime-chart-04 d-inline-block"></div>
+                                    <span class="d-block mt-2 text-primary">65%</span>
+                                 </td>
+                                 <td class="text-center">
+                                    <div class="text-black">2018/03/29 @07:25</div>
+                                 </td>
+                                 <td class="text-center m-auto">
+                                    <div class="d-flex align-items-center justify-content-center">
+                                       <a href="javascript:void(0);" class="avatar-45 text-center ml-3 rounded bg-danger-light font-size-18"><i class="ri-bar-chart-fill"></i></a>
+                                       <a href="javascript:void(0);" class="avatar-45 rounded text-center ml-3 bg-dark-light font-size-18"><i class="ri-delete-bin-7-fill"></i></a>
+                                    </div>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td>
+                                    <h6>Facebook/whitehouse</h6>
+                                 </td>
+                                 <td class="text-center">
+                                    <div class="text-success font-size-24"><i class="ri-arrow-up-fill"></i></div>
+                                 </td>
+                                 <td class="text-center">
+                                    <div class="api-chart-05 d-inline-block"></div>
+                                    <span class="d-block mt-2 text-danger">81ms</span>
+                                 </td>
+                                 <td class="text-center">
+                                    <div class="apitime-chart-05 d-inline-block"></div>
+                                    <span class="d-block mt-2 text-primary">65%</span>
+                                 </td>
+                                 <td class="text-center">
+                                    <div class="text-black">2018/03/29 @07:25</div>
+                                 </td>
+                                 <td class="text-center m-auto">
+                                    <div class="d-flex align-items-center justify-content-center">
+                                       <a href="javascript:void(0);" class="avatar-45 text-center ml-3 rounded bg-primary-light font-size-18"><i class="ri-pencil-fill"></i></a>
+                                       <a href="javascript:void(0);" class="avatar-45 text-center ml-3 rounded bg-danger-light font-size-18"><i class="ri-bar-chart-fill"></i></a>
+                                       <a href="javascript:void(0);" class="avatar-45 rounded text-center ml-3 bg-dark-light font-size-18"><i class="ri-repeat-2-line"></i></a>
+                                       <a href="javascript:void(0);" class="avatar-45 rounded text-center ml-3 bg-success-light font-size-18"><i class="ri-pause-line"></i></a>
+                                    </div>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <div class="d-block text-center text-black font-weight-500">View all<i class="ri-arrow-down-s-line"></i></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   {{/content}}
+{{/extend}}

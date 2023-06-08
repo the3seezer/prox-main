@@ -1,0 +1,121 @@
+<div class="salon-samall-saidbar">
+   <div class="iq-sidebar-logo d-flex justify-content-between">
+      <a href="index.html" class="header-logo">
+            {{#compare logoName '!==' ''}}
+            <img src="{{path}}assets/images/{{logoName}}" class="img-fluid rounded-normal" alt="logo">
+            {{else}}
+            <img src="{{path}}assets/images/logo-icon.png" class="img-fluid rounded-normal" alt="logo">
+            {{/compare}}
+      </a>
+      <div class="iq-menu-bt-sidebar">
+            <div class="iq-menu-bt align-self-center">
+                  <div class="wrapper-menu open">
+                        <div class="main-circle"><i class="las la-bars"></i></div>
+                  </div>
+            </div>
+      </div>
+   </div>
+   <div id="salon-scrollbar" class="data-scrollbar  salon-scroll">
+      <nav class="iq-sidebar-menu">
+            <ul id="iq-sidebar-toggle" class="iq-menu">
+            {{#each defaultMenu}}
+                  {{#compare @key '==' 'layout4'}}
+                        {{#each ../sidebarList}}
+                              {{#compare ../../layout '===' 'layouts/backend/default'}}
+                              {{#inArray name ../this}}
+                                    <li class="{{#compare ../../active "==" name }}active{{ else }} {{/compare}}">
+                                          {{#if children}}
+                                          <a href="{{href}}" class="collapsed" data-toggle="collapse" aria-expanded="false">
+                                                <i class="{{icon_class}}"></i><span>{{title}}</span>
+                                          </a>
+                                          <ul id="{{name}}" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
+                                                {{#children}}
+                                                      <li class="{{#compare ../../../active "==" name }}active{{ else }} {{/compare}}">
+                                                      {{#if children}}
+                                                      <a href="{{href}}" class="collapsed" data-toggle="collapse" aria-expanded="false">
+                                                            <i class="{{icon_class}}"></i><span>{{title}}</span>
+                                                      </a>
+                                                      <ul id="{{name}}" class="iq-submenu iq-submenu-data collapse" data-parent="#{{../name}}">
+                                                            {{#children}}
+                                                                  <li class="{{#compare ../../../active "==" name }}active{{ else }} {{/compare}}">
+                                                                  <a href="../{{href}}.html">
+                                                                        <i class="{{icon_class}}"></i><span>{{title}}</span>
+                                                                  </a>
+                                                                  </li>
+                                                            {{/children}}
+                                                      </ul>
+                                                      {{else}}
+                                                            <a href="../{{href}}.html">
+                                                                  <i class="{{icon_class}}"></i><span>{{title}}</span>
+                                                            </a>
+                                                      {{/if}}
+                                                      </li>
+                                                {{/children}}
+                                          </ul>
+                                          {{else}}
+                                          <a href="../{{href}}.html" class="">
+                                                <i class="{{icon_class}}"></i><span>{{title}}</span>
+                                          </a>
+                                          {{/if}}
+                                    </li>
+                              {{/inArray}}
+                              {{else}}
+                              <li class="{{#compare ../../active "==" name }}active{{ else }} {{/compare}}">
+                                    {{#if children}}
+                                          <a href="{{href}}" class="collapsed" data-toggle="collapse" aria-expanded="false">
+                                          <i class="{{icon_class}}"></i><span>{{title}}</span>
+                                          <i class="ri-arrow-right-s-line iq-arrow-right"></i>
+                                          </a>
+                                          <ul id="{{name}}" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
+                                          {{#children}}
+                                                <li class="{{#compare ../../../active "==" name }}active{{ else }} {{/compare}}">
+                                                {{#if children}}
+                                                      <a href="{{href}}" class="collapsed" data-toggle="collapse" aria-expanded="false">
+                                                      <i class="{{icon_class}}"></i><span>{{title}}</span>
+                                                      <i class="ri-arrow-right-s-line iq-arrow-right"></i>
+                                                      </a>
+                                                      <ul id="{{name}}" class="iq-submenu iq-submenu-data collapse" data-parent="#{{../name}}">
+                                                      {{#children}}
+                                                            <li class="{{#compare ../../../active "==" name }}active{{ else }} {{/compare}}">
+                                                                  <a href="../{{href}}.html">
+                                                                  <i class="{{icon_class}}"></i><span>{{title}}</span>
+                                                                  </a>
+                                                            </li>
+                                                      {{/children}}
+                                                      </ul>
+                                                {{else}}
+                                                      <a href="../{{href}}.html">
+                                                            <i class="{{icon_class}}"></i><span>{{title}}</span>
+                                                      </a>
+                                                {{/if}}
+                                                </li>
+                                          {{/children}}
+                                          </ul>
+                                    {{else}}
+                                          <a href="../{{href}}.html" class="">
+                                          <i class="{{icon_class}}"></i><span>{{title}}</span>
+                                          </a>
+                                    {{/if}}
+                              </li>
+                              {{/compare}}
+                        {{/each}}
+                  {{/compare}}
+                  {{/each}}
+            
+            </ul>
+      </nav> 
+     
+   </div> 
+<div id="sidebar-bottom" class="sidebar-bottom position-relative">
+      <div class="sidebar-menu-icon">
+            <a href="../app/user-account-setting.html" class="set-text" data-toggle="tooltip" data-placement="right"
+                  title="" data-original-title="Setting"><i class="ri-settings-2-fill"></i>
+            </a>
+            <div class="small-profl">
+                  <a href="../app/user-profile.html" class="iq-user-toggle">
+                        <img src="../assets/images/user/1.jpg" class="img-fluid rounded avatar-40" alt="user">
+                  </a>
+            </div>
+      </div>
+</div>
+</div>

@@ -1,0 +1,153 @@
+<div class="two-sidebar sidebar-1">
+    <div class="iq-sidebar-small">
+        <div class="sidebar-top">
+            <div class="iq-sidebar-small-logo">
+                <a href="index.html">
+                {{#compare logoName '!==' ''}}
+                <img src="{{path}}assets/images/{{logoName}}" class="img-fluid" alt="logo">
+                {{else}}
+                <img src="{{path}}assets/images/logo-icon.png" class="img-fluid" alt="logo">
+                {{/compare}}
+                </a>
+            </div>
+            <div class="sidebar-menu-icon">
+                <ul class="nav nav-pills list-inline m-0 p-0" id="icon-pills-tab" role="tablist">
+                    {{#each defaultMenu}}
+                        {{#compare @key '==' 'layout2'}}
+                            {{#each ../sidebarList}}
+                                {{#compare ../../layout '===' 'layouts/backend/default'}}
+                                    {{#inArray name ../this}}
+                                        {{#if children}}
+                                            <li class="nav-item d-block">
+                                                <a class="nav-link" data-toggle="pill" href="#{{name}}-pan" role="tab" aria-selected="false"><i class="{{icon_class}}"></i></a>
+                                            </li>
+                                        {{else}}
+                                            <li class="nav-item d-block">
+                                                <a class="nav-link" href="../{{href}}.html" aria-selected="false"><i class="{{icon_class}}"></i></a>
+                                            </li>
+                                        {{/if}}
+                                    {{/inArray}}
+                                {{else}}
+                                    {{#if children}}
+                                        <li class="nav-item d-block">
+                                            <a class="nav-link" data-toggle="pill" href="#{{name}}-pan" role="tab" aria-selected="false"><i class="{{icon_class}}"></i></a>
+                                        </li>
+                                    {{else}}
+                                        <li class="nav-item d-block">
+                                            <a class="nav-link" href="../{{href}}.html" aria-selected="false"><i class="{{icon_class}}"></i></a>
+                                        </li>
+                                    {{/if}}
+                                {{/compare}}
+                            {{/each}}
+                        {{/compare}}
+                    {{/each}}
+                </ul>
+            </div>
+        </div>
+        <div class="sidebar-bottom">
+            <div class="sidebar-menu-icon">
+                <a href="../app/user-account-setting.html" class="" data-toggle="tooltip" data-placement="right" title="" data-original-title="Setting"><i class="ri-settings-2-fill"></i></a>
+                <div class="iq-menu-bt align-self-center">
+                <div class="wrapper-menu">
+                     <div class="main-circle"><i class="las la-angle-double-left"></i></div>
+                     <div class="main-circle close-btn"><i class="las la-angle-double-right"></i></div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="iq-sidebar">
+        <div class="iq-sidebar-top">
+            <div class="top-menu-icon">
+                <ul class="list-inline d-flex align-items-center justify-content-between m-0 p-0">
+                    <li class="menu-icon">
+                            <a href="../app/user-profile.html" class="bg-info-light" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Profile"><i class="las la-user-circle"></i></a>
+                    </li>
+                    <li class="menu-icon">
+                            <a href="../app/email.html" class="bg-warning-light" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Email"><i class="las la-envelope-open"></i></a>
+                    </li>
+                    <li class="menu-icon">
+                            <a href="../app/chat.html" class="bg-info-light" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Chat"><i class="lab la-rocketchat"></i></a>
+                    </li>
+                    <li class="menu-icon">
+                            <a href="contact-list.html" class="bg-warning-light" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Contact"><i class="las la-file-alt"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="data-scrollbar" data-scroll="1">
+            <nav class="iq-sidebar-menu">
+                <div class="tab-content">
+                    {{#each defaultMenu}}
+                        {{#compare @key '==' 'layout2'}}
+                            {{#each ../sidebarList}}
+                                {{#compare ../../layout '===' 'layouts/backend/default'}}
+                                    {{#inArray name ../this}}
+                                        <div class="tab-pane fade" id="{{name}}-pan" role="tabpanel">
+                                            <ul id="{{name}}" class="iq-menu">
+                                                {{#children}}
+                                                    <li class="{{#compare ../../../active "==" name }}active{{ else }} {{/compare}}">
+                                                    {{#if children}}
+                                                        <a href="{{href}}" class="collapsed" data-toggle="collapse" aria-expanded="false">
+                                                            <i class="{{icon_class}}"></i><span>{{title}}</span>
+                                                            <i class="{{collapse_icon_class}}"></i>
+                                                            <i class="{{expanded_icon_class}}"></i>
+                                                        </a>
+                                                        <ul id="{{name}}" class="iq-submenu iq-submenu-data collapse" data-parent="#{{../name}}">
+                                                            {{#children}}
+                                                                <li class="{{#compare ../../../../active "==" name }}active{{ else }} {{/compare}}">
+                                                                    <a href="../{{href}}.html">
+                                                                        <i class="{{icon_class}}"></i><span>{{title}}</span>
+                                                                    </a>
+                                                                </li>
+                                                            {{/children}}
+                                                        </ul>
+                                                    {{else}}
+                                                            <a href="../{{href}}.html">
+                                                                <i class="{{icon_class}}"></i><span>{{title}}</span>
+                                                            </a>
+                                                    {{/if}}
+                                                    </li>
+                                                {{/children}}
+                                            </ul>
+                                        </div>
+                                    {{/inArray}}
+                                {{else}}
+                                        <div class="tab-pane fade" id="{{name}}-pan" role="tabpanel">
+                                            <ul id="{{name}}" class="iq-menu">
+                                                {{#children}}
+                                                    <li class="{{#compare ../../../active "==" name }}active{{ else }} {{/compare}}">
+                                                    {{#if children}}
+                                                        <a href="{{href}}" class="collapsed" data-toggle="collapse" aria-expanded="false">
+                                                            <i class="{{icon_class}}"></i><span>{{title}}</span>
+                                                            <i class="{{collapse_icon_class}}"></i>
+                                                            <i class="{{expanded_icon_class}}"></i>
+                                                        </a>
+                                                        <ul id="{{name}}" class="iq-submenu iq-submenu-data collapse" data-parent="#{{../name}}">
+                                                            {{#children}}
+                                                                <li class="{{#compare ../../../../active "==" name }}active{{ else }} {{/compare}}">
+                                                                    <a href="../{{href}}.html">
+                                                                        <i class="{{icon_class}}"></i><span>{{title}}</span>
+                                                                    </a>
+                                                                </li>
+                                                            {{/children}}
+                                                        </ul>
+                                                    {{else}}
+                                                            <a href="../{{href}}.html">
+                                                                <i class="{{icon_class}}"></i><span>{{title}}</span>
+                                                            </a>
+                                                    {{/if}}
+                                                    </li>
+                                                {{/children}}
+                                            </ul>
+                                        </div>
+                                {{/compare}}
+                            {{/each}}
+                        {{/compare}}
+                    {{/each}}
+                </div>
+            </nav>
+            <div class="p-3"></div>
+        </div>
+    </div>
+</div>

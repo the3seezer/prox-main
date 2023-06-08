@@ -1,0 +1,147 @@
+<div class="iq-sidebar sidebar-bg-box">
+    <div class="iq-fitness-info bg-primary mb-3">
+        <div class="iq-sidebar-logo d-flex align-items-center justify-content-between">
+            <a href="index.html" class="header-logo">
+                {{#compare logoName '!==' ''}}
+                <img src="{{path}}assets/images/{{logoName}}" class="img-fluid rounded-normal" alt="logo">
+                {{else}}
+                <img src="{{path}}assets/images/logo-white.png" class="img-fluid rounded-normal" alt="logo">
+                {{/compare}}
+            </a>
+            <div class="iq-menu-bt-sidebar">
+                <div class="iq-menu-bt align-self-center">
+                    <div class="wrapper-menu">
+                        <div class="main-circle"><i class="las la-bars"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="user-background text-left">
+            <a href="javascript:void(0);" class="collapsed" data-toggle="collapse"
+                aria-expanded="false">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class="user-text d-flex align-items-center">
+                        <img src="{{path}}assets/images/layouts/layout-3/user-2.jpg" class="img-fluid rounded avatar-40 mr-3"
+                            alt="user-2">
+                            <div class="user-text-info line-height">
+                                <span>Steve K</span>
+                                <div class="iq-progress-bar-linear d-inline-block w-80">
+                                        <div class="iq-progress-bar">
+                                                <span class="bg-warning" data-percent="60"></span>
+                                        </div>
+                                </div>
+                            </div>
+
+                    </div>
+                    <i class="las la-angle-right iq-arrow-right text-right"></i>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div id="sidebar-scrollbar" class="data-scrollbar" data-scroll="1">
+        <nav class="iq-sidebar-menu">
+            <ul id="iq-sidebar-toggle" class="iq-menu">
+                {{#each defaultMenu}}
+                        {{#compare @key '==' 'layout3'}}
+                            {{#each ../sidebarList}}
+                                {{#compare ../../layout '===' 'layouts/backend/default'}}
+                                    {{#inArray name ../this}}
+                                        <li class="{{#compare ../../active "==" name }}active{{ else }} {{/compare}}">
+                                            {{#if children}}
+                                                <a href="{{href}}" class="collapsed" data-toggle="collapse" aria-expanded="false">
+                                                    <i class="{{icon_class}}"></i><span>{{title}}</span>
+                                                    <i class="{{collapse_icon_class}}"></i>
+                                                    <i class="{{expanded_icon_class}}"></i>
+                                                </a>
+                                                <ul id="{{name}}" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
+                                                    {{#children}}
+                                                        <li class="{{#compare ../../../active "==" name }}active{{ else }} {{/compare}}">
+                                                        {{#if children}}
+                                                            <a href="{{href}}" class="collapsed" data-toggle="collapse" aria-expanded="false">
+                                                                <i class="{{icon_class}}"></i><span>{{title}}</span>
+                                                                <i class="{{collapse_icon_class}}"></i>
+                                                                <i class="{{expanded_icon_class}}"></i>
+                                                            </a>
+                                                            <ul id="{{name}}" class="iq-submenu iq-submenu-data collapse" data-parent="#{{../name}}">
+                                                                {{#children}}
+                                                                    <li class="{{#compare ../../../active "==" name }}active{{ else }} {{/compare}}">
+                                                                        <a href="../{{href}}.html">
+                                                                            <i class="{{icon_class}}"></i><span>{{title}}</span>
+                                                                        </a>
+                                                                    </li>
+                                                                {{/children}}
+                                                            </ul>
+                                                        {{else}}
+                                                                <a href="../{{href}}.html">
+                                                                    <i class="{{icon_class}}"></i><span>{{title}}</span>
+                                                                </a>
+                                                        {{/if}}
+                                                        </li>
+                                                    {{/children}}
+                                                </ul>
+                                            {{else}}
+                                                <a href="../{{href}}.html" class="">
+                                                    <i class="{{icon_class}}"></i><span>{{title}}</span>
+                                                </a>
+                                            {{/if}}
+                                        </li>
+                                    {{/inArray}}
+                                {{else}}
+                                    <li class="{{#compare ../../active "==" name }}active{{ else }} {{/compare}}">
+                                        {{#if children}}
+                                            <a href="{{href}}" class="collapsed" data-toggle="collapse" aria-expanded="false">
+                                                <i class="{{icon_class}}"></i><span>{{title}}</span>
+                                                <i class="{{collapse_icon_class}}"></i>
+                                                <i class="{{expanded_icon_class}}"></i>
+                                            </a>
+                                            <ul id="{{name}}" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
+                                                {{#children}}
+                                                    <li class="{{#compare ../../../active "==" name }}active{{ else }} {{/compare}}">
+                                                    {{#if children}}
+                                                        <a href="{{href}}" class="collapsed" data-toggle="collapse" aria-expanded="false">
+                                                            <i class="{{icon_class}}"></i><span>{{title}}</span>
+                                                            <i class="{{collapse_icon_class}}"></i>
+                                                            <i class="{{expanded_icon_class}}"></i>
+                                                        </a>
+                                                        <ul id="{{name}}" class="iq-submenu iq-submenu-data collapse" data-parent="#{{../name}}">
+                                                            {{#children}}
+                                                                <li class="{{#compare ../../../active "==" name }}active{{ else }} {{/compare}}">
+                                                                    <a href="../{{href}}.html">
+                                                                        <i class="{{icon_class}}"></i><span>{{title}}</span>
+                                                                    </a>
+                                                                </li>
+                                                            {{/children}}
+                                                        </ul>
+                                                    {{else}}
+                                                            <a href="../{{href}}.html">
+                                                                <i class="{{icon_class}}"></i><span>{{title}}</span>
+                                                            </a>
+                                                    {{/if}}
+                                                    </li>
+                                                {{/children}}
+                                            </ul>
+                                        {{else}}
+                                            <a href="../{{href}}.html" class="">
+                                                <i class="{{icon_class}}"></i><span>{{title}}</span>
+                                            </a>
+                                        {{/if}}
+                                    </li>
+                                {{/compare}}
+                            {{/each}}
+                        {{/compare}}
+                    {{/each}}
+            </ul>
+        </nav>
+        <div id="sidebar-bottom" class="position-relative">
+                <div class="card bg-primary rounded">
+                   <div class="card-body">
+                       <div class="sidebarbottom-content">
+                          <div class="image"><img src="{{path}}assets/images/layouts/layout-3/side-bkg.png" alt="side-bkg"></div>
+                          <h5 class="mb-3 text-white">Upgrade to PRO</h5>
+                          <p class="mb-0 text-white">Become a pro user & enjoy more.</p>
+                      </div>
+                  </div>
+                </div>
+        </div>
+    </div>
+</div>

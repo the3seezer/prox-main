@@ -1,0 +1,472 @@
+
+{{#extend 'layouts/backend/layout-1' title="layout-1" active="layout-1" path="../" }}
+{{#content "content"}}
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="row">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center">
+                                    <span class="icon-small bg-primary rounded mr-2">
+                                    <i class="las la-user-secret"></i></span>Guest
+                                </div>
+                                <h2 class="counter">5266</h2>
+                                <div class="iq-progress-bar mt-2">
+                                    <span class="bg-primary iq-progress" data-percent="55">
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center">
+                                    <span class="icon-small bg-danger rounded mr-2">
+                                        <i class="las la-user-astronaut"></i></span>Staff
+                                </div>
+                                <h2 class="counter">450</h2>
+                                <div class="iq-progress-bar mt-2">
+                                    <span class="bg-danger iq-progress" data-percent="55">
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center">
+                                    <span class="icon-small bg-success rounded mr-2">
+                                        <i class="las la-ticket-alt"></i></span>Booking
+                                </div>
+                                <h2><span class="counter">12</span>K</h2>
+                                <div class="iq-progress-bar mt-2">
+                                    <span class="bg-success iq-progress" data-percent="55">
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center">
+                                    <span class="icon-small bg-warning rounded mr-2">
+                                        <i class="las la-dollar-sign"></i></span>Earning
+                                </div>
+                                <h2>$<span class="counter">8500</span></h2>
+                                <div class="iq-progress-bar mt-2">
+                                    <span class="bg-warning iq-progress" data-percent="55">
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card card-block card-stretch card-height bg-primary">
+                            <div class="card-body pb-0">
+                                <h1 class="text-white">600+</h1>
+                                <p class="mb-0">Enquires via call and online forms </p>
+                            </div>
+                            <div id="hotel-column-1"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card card-block card-stretch card-height">
+                            <div class="card-header d-flex justify-content-between">
+                                <div class="header-title">
+                                    <h4 class="card-title">Guest By Country's</h4>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div id="hotel-chart-2"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card card-block card-stretch card-height">
+                    <div class="card-header d-flex justify-content-between">
+                        <div class="header-title">
+                            <h4 class="card-title">Earning Statistics</h4>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="text-center">
+                            <div id="hotel-payment-01" class="mb-3"></div>
+                            <h5>Your earning this month</h5>
+                            <h1 class="text-primary mt-3 mb-2"><b>$ 2.5K</b></h1>
+                            <p>Change your payment <br>account from setting </p>
+                            <div class="payment-button">
+                                <button type="button" class="btn btn-secondary">Withdraw All Earning</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <div class="card card-block card-stretch card-height">
+                    <div class="card-header d-flex justify-content-between">
+                        <div class="header-title">
+                            <h4 class="card-title">Income</h4>
+                        </div>
+                        <div class="card-header-toolbar d-flex align-items-center">
+                            <div class="dropdown">
+                                <span class="dropdown-toggle dropdown-bg border p-1 border-primary text-primary rounded-normal" id="dropdownMenuButton1"
+                                    data-toggle="dropdown">
+                                    Weekly<i class="ri-arrow-down-s-line ml-1 text-primary"></i>
+                                </span>
+                                <div class="dropdown-menu dropdown-menu-right shadow-none"
+                                    aria-labelledby="dropdownMenuButton1">
+                                    <a class="dropdown-item" href="#"><i class="ri-delete-bin-6-fill mr-2"></i>Delete</a>
+                                    <a class="dropdown-item" href="#"><i class="ri-pencil-fill mr-2"></i>Edit</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div id="hotel-chart-3"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card card-block card-stretch card-height-half bg-warning rounded">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <div id="hotel-chart-4"></div>
+                            <div class="pl-3">
+                                <h2 class="text-white">500</h2>
+                                <p class="mb-0">Cancellation</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-block card-stretch card-height-half">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <div id="hotel-chart-5"></div>
+                            <div class="pl-3">
+                                <h2>2,456</h2>
+                                <p class="mb-0">Enquiry</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="card-header d-flex justify-content-between">
+                        <div class="header-title">
+                            <h4 class="card-title">Recent Guest</h4>
+                        </div>
+                        <div class="card-header-toolbar d-flex align-items-center">
+                            <a href="#" class="btn btn-sm btn-outline-primary view-more">View More</a>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table data-table mb-0 table-borderless tbl-recent-info text-body">
+                                <thead>
+                                    <tr class="text-dark">
+                                        <th scope="col">No</th>
+                                        <th scope="col">Name</th>
+                                        <th scope="col">Member's</th>
+                                        <th scope="col">Check In</th>
+                                        <th scope="col">Check Out</th>
+                                        <th scope="col">Ph No.</th>
+                                        <th scope="col">Status</th>
+                                        <th scope="col">Room Type</th>
+                                        <th scope="col">City</th>
+                                        <th scope="col">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <div class="avatar-40 mr-2">
+                                                    <img src="{{path}}assets/images/user/01.jpg" class="img-fluid rounded"
+                                                        alt="image">
+                                                </div>
+                                                <div>Maggie Potts</div>
+                                            </div>
+                                        </td>
+                                        <td>05</td>
+                                        <td>01/09/2020</td>
+                                        <td>10/09/2020</td>
+                                        <td>12345 6789</td>
+                                        <td>
+                                            <div class="badge badge-success">Paid</div>
+                                        </td>
+                                        <td>Double</td>
+                                        <td>Canada</td>
+                                        <td>
+                                            <div class="d-flex align-items-center list-action">
+                                                <a class="badge bg-success-light mr-2" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit" href="#"><i class="ri-pencil-line"></i></a>
+                                                <a class="badge bg-danger-light" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete" href="#"><i class="ri-delete-bin-line"></i></a>
+                                            </div>
+                                        </td>                                        
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <div class="avatar-40 mr-2">
+                                                    <img src="{{path}}assets/images/user/02.jpg" class="img-fluid rounded"
+                                                        alt="image">
+                                                </div>
+                                                <div>John Watson</div>
+                                            </div>
+                                        </td>
+                                        <td>02</td>
+                                        <td>20/08/2020</td>
+                                        <td>25/08/2020</td>
+                                        <td>12345 6789</td>
+                                        <td>
+                                            <div class="badge badge-danger">Pending</div>
+                                        </td>
+                                        <td>Single</td>
+                                        <td>Canada</td>
+                                        <td>
+                                            <div class="d-flex align-items-center list-action">
+                                                <a class="badge bg-success-light mr-2" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"
+                                                    href="#"><i class="ri-pencil-line"></i></a>
+                                                <a class="badge bg-danger-light" data-toggle="tooltip" data-placement="top" title=""
+                                                    data-original-title="Delete" href="#"><i class="ri-delete-bin-line"></i></a>
+                                            </div>
+                                        </td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <div class="avatar-40 mr-2">
+                                                    <img src="{{path}}assets/images/user/03.jpg" class="img-fluid rounded"
+                                                        alt="image">
+                                                </div>
+                                                <div>Kusti Franti</div>
+                                            </div>
+                                        </td>
+                                        <td>05</td>
+                                        <td>05/09/2020</td>
+                                        <td>22/09/2020</td>
+                                        <td>12345 6789</td>
+                                        <td>
+                                            <div class="badge badge-success">Paid</div>
+                                        </td>
+                                        <td>Single</td>
+                                        <td>Canada</td>
+                                        <td>
+                                            <div class="d-flex align-items-center list-action">
+                                                <a class="badge bg-success-light mr-2" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"
+                                                    href="#"><i class="ri-pencil-line"></i></a>
+                                                <a class="badge bg-danger-light" data-toggle="tooltip" data-placement="top" title=""
+                                                    data-original-title="Delete" href="#"><i class="ri-delete-bin-line"></i></a>
+                                            </div>
+                                        </td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <div class="avatar-40 mr-2">
+                                                    <img src="{{path}}assets/images/user/04.jpg" class="img-fluid rounded" alt="image">
+                                                </div>
+                                                <div>Madelyn Franci</div>
+                                            </div>
+                                        </td>
+                                        <td>03</td>
+                                        <td>01/08/2020</td>
+                                        <td>15/08/2020</td>
+                                        <td>12345 6789</td>
+                                        <td>
+                                            <div class="badge badge-danger">Pending</div>
+                                        </td>
+                                        <td>Duplex</td>
+                                        <td>Canada</td>
+                                        <td>
+                                            <div class="d-flex align-items-center list-action">
+                                                <a class="badge bg-success-light mr-2" data-toggle="tooltip" data-placement="top" title=""
+                                                    data-original-title="Edit" href="#"><i class="ri-pencil-line"></i></a>
+                                                <a class="badge bg-danger-light" data-toggle="tooltip" data-placement="top" title=""
+                                                    data-original-title="Delete" href="#"><i class="ri-delete-bin-line"></i></a>
+                                            </div>
+                                        </td>
+                                    
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <div class="avatar-40 mr-2">
+                                                    <img src="{{path}}assets/images/user/05.jpg" class="img-fluid rounded" alt="image">
+                                                </div>
+                                                <div>Kadin Franci</div>
+                                            </div>
+                                        </td>
+                                        <td>02</td>
+                                        <td>27/07/2020</td>
+                                        <td>01/08/2020</td>
+                                        <td>12345 6789</td>
+                                        <td>
+                                            <div class="badge badge-success">Paid</div>
+                                        </td>
+                                        <td>Deluxe</td>
+                                        <td>Canada</td>
+                                        <td>
+                                            <div class="d-flex align-items-center list-action">
+                                                <a class="badge bg-success-light mr-2" data-toggle="tooltip" data-placement="top" title=""
+                                                    data-original-title="Edit" href="#"><i class="ri-pencil-line"></i></a>
+                                                <a class="badge bg-danger-light" data-toggle="tooltip" data-placement="top" title=""
+                                                    data-original-title="Delete" href="#"><i class="ri-delete-bin-line"></i></a>
+                                            </div>
+                                        </td>
+                                    
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card card-block card-stretch card-height">
+                    <div class="card-header d-flex justify-content-between">
+                        <div class="header-title">
+                            <h4 class="card-title">Room Categories</h4>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div id="hotel-chart-6"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card card-block card-stretch card-height">
+                    <div class="card-header d-flex justify-content-between">
+                        <div class="header-title">
+                            <h4 class="card-title">Hotel Amenities</h4>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-inline p-0 m-0">
+                            <li class="mb-4">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="icon iq-icon-box rounded bg-warning-light text-center">
+                                        <i class="fas fa-utensils"></i>
+                                    </div>
+                                    <div class="iq-result-info">
+                                        <h5>Oceans 11 Restaurant</h5>
+                                        <p class="mb-0">09:00 to 18:00</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="mb-4">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="icon iq-icon-box rounded bg-info-light text-center">
+                                        <i class="fas fa-glass-cheers"></i>
+                                    </div>
+                                    <div class="iq-result-info">
+                                        <h5>Open Bar Overlooking Sea</h5>
+                                        <p class="mb-0">05/09/2020</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="mb-4">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="icon iq-icon-box rounded bg-danger-light text-center">
+                                        <i class="fas fa-tshirt"></i>
+                                    </div>
+                                    <div class="iq-result-info">
+                                        <h5>Laundry & Valet Service</h5>
+                                        <p class="mb-0">25/08/2020</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="icon iq-icon-box rounded bg-success-light text-center">
+                                        <i class="fas fa-wifi"></i>
+                                    </div>
+                                    <div class="iq-result-info">
+                                        <h5>Lounge with Free Wi-Fi</h5>
+                                        <p class="mb-0">10/08/2020</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card card-block card-stretch card-height">
+                    <div class="card-header d-flex justify-content-between">
+                        <div class="header-title">
+                            <h4 class="card-title">Task To Do</h4>
+                        </div>
+                        <div class="card-header-toolbar d-flex align-items-center">
+                            <a href="#" class="btn btn-sm btn-outline-primary view-more">View More</a>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-inline p-0 m-0">
+                            <li class="mb-3">
+                                <div class="d-flex align-items-center">
+                                    <div class="badge badge-primary iq-number">1</div>
+                                    <div class="ml-4">
+                                        <h5>Clean The Room</h5>
+                                        <p class="mb-0">Room No: 103</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="mb-3">
+                                <div class="d-flex align-items-center">
+                                    <div class="badge badge-danger iq-number">2</div>
+                                    <div class="ml-4">
+                                        <h5>Clean The Table</h5>
+                                        <p class="mb-0">Room No: 207</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="mb-3">
+                                <div class="d-flex align-items-center">
+                                    <div class="badge badge-success iq-number">3</div>
+                                    <div class="ml-4">
+                                        <h5>Clean The Window</h5>
+                                        <p class="mb-0">Room No: 302</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="mb-3">
+                                <div class="d-flex align-items-center">
+                                    <div class="badge badge-warning iq-number">4</div>
+                                    <div class="ml-4">
+                                        <h5>Clean The Floor</h5>
+                                        <p class="mb-0">Room No: 406</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="d-flex align-items-center">
+                                    <div class="badge badge-info iq-number">5</div>
+                                    <div class="ml-4">
+                                        <h5>Change Bed</h5>
+                                        <p class="mb-0">Room No: 205</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{{/content}}
+{{/extend}}
